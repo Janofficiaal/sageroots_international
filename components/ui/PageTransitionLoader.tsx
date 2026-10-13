@@ -98,7 +98,7 @@ export default function PageTransitionLoader() {
       }`}
       role="status"
       aria-live="polite"
-      aria-label="100% Job Guarantee — Loading page..."
+      aria-label="Part-Time Job Guaranteed — Loading page..."
     >
       {/* Light soft glass backdrop */}
       <div className="absolute inset-0 bg-white/35 backdrop-blur-[2px] transition-opacity duration-200" />
@@ -107,11 +107,11 @@ export default function PageTransitionLoader() {
         {/* Soft glowing ambient circle */}
         <div className="absolute w-40 h-40 bg-orange-500/15 rounded-full blur-2xl pointer-events-none" />
 
-        {/* Transparent 100% Job Guarantee Stamp */}
+        {/* Transparent Part-Time Job Guaranteed Stamp */}
         <div className="relative w-36 h-32 sm:w-44 sm:h-36 animate-cap-float drop-shadow-xl">
           <Image
             src="/images/job-guarantee.png"
-            alt="100% Job Guarantee"
+            alt="Part-Time Job Guaranteed"
             fill
             priority
             className="object-contain"
@@ -125,7 +125,7 @@ export default function PageTransitionLoader() {
 
         {/* Loading badge */}
         <span className="mt-2.5 px-3.5 py-1 rounded-full bg-white/95 shadow-sm border border-black/10 text-[11px] sm:text-xs font-extrabold tracking-wider uppercase text-[#7A1C08]">
-          100% Job Guarantee
+          Part-Time Job Guaranteed
         </span>
       </div>
     </div>

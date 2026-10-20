@@ -215,7 +215,7 @@ export default function Header() {
             {/* Apply Now Button */}
             <Link
               href="/apply"
-              className="flex-shrink-0 px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold tracking-wide whitespace-nowrap bg-amber-500 hover:bg-amber-600 text-[#042017] border border-amber-400 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+              className="flex-shrink-0 px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold tracking-wide whitespace-nowrap bg-[#3aa335] hover:bg-[#1b3a8a] text-white border border-[#3aa335]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
             >
               Apply Now
             </Link>
@@ -331,7 +331,7 @@ export default function Header() {
               <Link
                 href="/apply"
                 onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center gap-2 w-full py-3 text-xs font-bold text-[#042017] bg-amber-500 hover:bg-amber-600 rounded-xl transition-colors shadow-lg shadow-amber-500/25"
+                className="flex items-center justify-center gap-2 w-full py-3 text-xs font-bold text-white bg-[#3aa335] hover:bg-[#1b3a8a] rounded-xl transition-colors shadow-lg shadow-[#3aa335]/25"
               >
                 <span>Apply Now</span>
               </Link>

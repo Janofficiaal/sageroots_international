@@ -211,14 +211,6 @@ export default function Header() {
                 </div>
               )
             })}
-
-            {/* Apply Now Button */}
-            <Link
-              href="/apply"
-              className="flex-shrink-0 px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold tracking-wide whitespace-nowrap bg-[#3aa335] hover:bg-[#1b3a8a] text-white border border-[#3aa335]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
-            >
-              Apply Now
-            </Link>
           </nav>
 
         </div>
@@ -328,13 +320,6 @@ export default function Header() {
 
             {/* Mobile Drawer Bottom Actions */}
             <div className="p-5 border-t border-white/10 bg-black/30 space-y-2.5">
-              <Link
-                href="/apply"
-                onClick={() => setMobileOpen(false)}
-                className="flex items-center justify-center gap-2 w-full py-3 text-xs font-bold text-white bg-[#3aa335] hover:bg-[#1b3a8a] rounded-xl transition-colors shadow-lg shadow-[#3aa335]/25"
-              >
-                <span>Apply Now</span>
-              </Link>
               <Link
                 href="/contact"
                 onClick={() => setMobileOpen(false)}

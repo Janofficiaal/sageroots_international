@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -49,8 +49,39 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
   const [mobileDropdown, setMobileDropdown] = useState<string | null>(null)
+  const dropdownTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const pathname = usePathname()
   const isHome = pathname === '/'
+
+  const handleMouseEnter = (label: string) => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current)
+      dropdownTimeoutRef.current = null
+    }
+    setOpenDropdown(label)
+  }
+
+  const handleMouseLeave = () => {
+    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current)
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null)
+    }, 300) // 300ms buffer so moving mouse between menu and dropdown never cuts off
+  }
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement
+      if (!target.closest('[data-dropdown-container]')) {
+        setOpenDropdown(null)
+      }
+    }
+    document.addEventListener('click', handleClickOutside)
+    return () => {
+      document.removeEventListener('click', handleClickOutside)
+      if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current)
+    }
+  }, [])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -171,12 +202,19 @@ export default function Header() {
               return (
                 <div
                   key={item.label}
+                  data-dropdown-container
                   className="relative flex-shrink-0"
-                  onMouseEnter={() => hasDropdown && setOpenDropdown(item.label)}
-                  onMouseLeave={() => setOpenDropdown(null)}
+                  onMouseEnter={() => hasDropdown && handleMouseEnter(item.label)}
+                  onMouseLeave={() => hasDropdown && handleMouseLeave()}
                 >
                   <Link
                     href={item.href}
+                    onClick={(e) => {
+                      if (hasDropdown) {
+                        // Click toggles and locks the dropdown so it stays open easily
+                        setOpenDropdown((prev) => (prev === item.label ? null : item.label))
+                      }
+                    }}
                     className={`group flex items-center gap-1.5 px-4 xl:px-4.5 py-2.5 rounded-xl text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap transition-all duration-200 shadow-md border ${
                       isActive
                         ? 'bg-emerald-600 text-white border-emerald-500 shadow-emerald-600/40 scale-105 font-bold ring-2 ring-emerald-400/30'
@@ -194,18 +232,25 @@ export default function Header() {
                     )}
                   </Link>
 
-                  {/* Dropdown Menu */}
+                  {/* Dropdown Menu - Seamless padded bridge so mouse never loses hover */}
                   {hasDropdown && isOpen && (
-                    <div className="absolute top-full left-0 mt-1.5 w-56 bg-[#042017]/95 backdrop-blur-xl rounded-2xl shadow-2xl shadow-black/60 border border-white/15 p-2 z-50 animate-fade-in">
-                      {item.children?.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold text-white/90 hover:text-white hover:bg-white/15 transition-all"
-                        >
-                          <span>{child.label}</span>
-                        </Link>
-                      ))}
+                    <div
+                      className="absolute top-full left-0 pt-2 w-56 z-50 animate-fade-in"
+                      onMouseEnter={() => handleMouseEnter(item.label)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="bg-[#042017]/95 backdrop-blur-xl rounded-2xl shadow-2xl shadow-black/60 border border-white/15 p-2">
+                        {item.children?.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setOpenDropdown(null)}
+                            className="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold text-white/90 hover:text-white hover:bg-white/15 transition-all"
+                          >
+                            <span>{child.label}</span>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>

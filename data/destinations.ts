@@ -23,7 +23,7 @@ export const destinations: Destination[] = [
     slug: 'united-kingdom',
     name: 'United Kingdom',
     tagline: 'Explore world-class universities, 1-year Master’s degrees, and vibrant student cities',
-    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80',
+    image: '/images/destinations/united-kingdom.jpg',
     highlight: 'Our primary expertise',
     universities: 139,
     overview:
@@ -63,7 +63,7 @@ export const destinations: Destination[] = [
     slug: 'australia',
     name: 'Australia',
     tagline: 'Discover Group of Eight excellence with high quality of life and post-study work pathways',
-    image: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?w=800&q=80',
+    image: '/images/destinations/australia.jpg',
     highlight: 'Top-ranked institutions',
     universities: 15,
     overview:
@@ -100,7 +100,7 @@ export const destinations: Destination[] = [
     slug: 'canada',
     name: 'Canada',
     tagline: 'Explore world-renowned research universities, co-op paid internships, and PGWP pathways',
-    image: 'https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80',
+    image: '/images/destinations/canada.jpg',
     highlight: 'Post-study work options',
     universities: 18,
     overview:
@@ -137,7 +137,7 @@ export const destinations: Destination[] = [
     slug: 'germany',
     name: 'Germany',
     tagline: 'Affordable European education with powerhouse engineering, innovation, and 18-month job seeker visa',
-    image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80',
+    image: '/images/destinations/germany.jpg',
     highlight: 'Low tuition options',
     universities: 14,
     overview:
@@ -174,7 +174,7 @@ export const destinations: Destination[] = [
     slug: 'ireland',
     name: 'Ireland',
     tagline: 'The Silicon Valley of Europe — English-speaking EU hub with 2-year post-study work visa',
-    image: 'https://images.unsplash.com/photo-1524230572899-a752b3835840?w=800&q=80',
+    image: '/images/destinations/ireland.jpg',
     highlight: 'Tech & business hub',
     universities: 12,
     overview:
@@ -211,7 +211,7 @@ export const destinations: Destination[] = [
     slug: 'new-zealand',
     name: 'New Zealand',
     tagline: 'All 8 national universities ranked in the QS World Top 3% with up to 3-year Post-Study Work Visa',
-    image: 'https://images.unsplash.com/photo-1507699622108-4be3abd695ad?w=800&q=80',
+    image: '/images/destinations/new-zealand.jpg',
     highlight: 'Quality of life',
     universities: 8,
     overview:
@@ -245,7 +245,7 @@ export const destinations: Destination[] = [
     slug: 'united-states',
     name: 'United States',
     tagline: 'Access world-leading R1 research universities, generous assistantships, and up to 3-year STEM OPT',
-    image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+    image: '/images/destinations/united-states.jpg',
     highlight: 'Ivy League & beyond',
     universities: 25,
     overview:
@@ -281,7 +281,7 @@ export const destinations: Destination[] = [
     name: 'Cyprus',
     tagline:
       'Affordable European Union higher education with high visa success, low tuition fees, and English-taught degrees',
-    image: 'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=800&q=80',
+    image: '/images/destinations/cyprus.jpg',
     highlight: 'Affordable EU education',
     universities: 10,
     overview:
@@ -319,7 +319,7 @@ export const destinations: Destination[] = [
     name: 'Malta',
     tagline:
       'Study in an English-speaking Schengen European country with British branch campuses and 29-country travel access',
-    image: 'https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=800&q=80',
+    image: '/images/destinations/malta.jpg',
     highlight: 'English-speaking Schengen hub',
     universities: 10,
     overview:
@@ -357,7 +357,7 @@ export const destinations: Destination[] = [
     name: 'Dubai (UAE)',
     tagline:
       'Earn prestigious UK, Australian, and US university degrees in the tax-free business capital of the Middle East',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80',
+    image: '/images/destinations/dubai.jpg',
     highlight: 'UK branch campuses & fast visa',
     universities: 14,
     overview:

@@ -50,6 +50,9 @@ export const metadata: Metadata = {
       'en-US': '/',
     },
   },
+  verification: {
+    google: 'ZXW00caf5GDAG3c8kF5sD_nbp0keyGV_yoN-ajQOUoQ',
+  },
   openGraph: {
     title:
       'Sage Roots International | Official UK, Cyprus, Malta & Dubai University Admissions Desk',
@@ -177,6 +180,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className="scroll-smooth">
       <head>
+        <meta name="google-site-verification" content="ZXW00caf5GDAG3c8kF5sD_nbp0keyGV_yoN-ajQOUoQ" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

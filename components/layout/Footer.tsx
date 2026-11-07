@@ -190,7 +190,7 @@ export default function Footer() {
                 <span className="block text-white font-semibold">44 Broadway, Stratford</span>
                 <span className="text-white/60 text-xs block">London E15 1XH, United Kingdom</span>
                 <span className="text-white/40 text-xs block mt-1">
-                  Regional Desks: Khulna &amp; Dhaka (Bangladesh) • Kolkata &amp; Hyderabad (India)
+                  Regional Desks: Sonadanga R/A, Khulna (BD) • Dhaka • Kolkata &amp; Hyderabad (India)
                 </span>
               </li>
               <li className="text-white/60 text-sm">

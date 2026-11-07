@@ -84,7 +84,9 @@ const khulnaSchemaJsonLd = {
       currenciesAccepted: 'GBP, BDT',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Sonadanga R/A (1st Phase)',
         addressLocality: 'Khulna',
+        postalCode: '9100',
         addressRegion: 'Khulna Division',
         addressCountry: 'BD',
       },

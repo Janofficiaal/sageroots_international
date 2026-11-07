@@ -28,6 +28,12 @@ export const metadata: Metadata = {
     'uk student visa consultancy in khulna',
     'study abroad consultancy in khulna',
     'education consultancy in khulna',
+    'nubtk study abroad consultancy',
+    'nubtk uk student visa',
+    'northern university khulna study in uk',
+    'north western university khulna study abroad',
+    'nwu khulna uk student visa',
+    'nubtk nwu ielts waiver moi uk',
     'khulna to uk student visa',
     'ielts waiver uk admission khulna',
     'study in uk from khulna bangladesh',
@@ -119,6 +125,14 @@ const khulnaSchemaJsonLd = {
         },
         {
           '@type': 'Question',
+          name: 'Can graduates from NUBTK or North Western University Khulna apply to the UK with MOI without IELTS?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes! Graduates of Northern University of Business & Technology Khulna (NUBTK) and North Western University (NWU Khulna) can apply to top UK universities using an English Medium of Instruction (MOI) certificate without taking IELTS for Master’s, MBA, and postgraduate programs with tuition deposit starting from £3,000.',
+          },
+        },
+        {
+          '@type': 'Question',
           name: 'How do students from Khulna start their application with Sage Roots?',
           acceptedAnswer: {
             '@type': 'Answer',
@@ -164,13 +178,13 @@ const keyFeatures = [
 ]
 
 const targetColleges = [
+  'Northern University of Business & Technology Khulna (NUBTK)',
+  'North Western University (NWU Khulna)',
   'Khulna University (KU)',
   'Khulna University of Engineering & Technology (KUET)',
   'Govt. Brajalal (BL) College, Daulatpur',
   'Govt. Majid Memorial City College',
-  'Northern University of Business & Technology Khulna',
   'Khulna Govt. Girls College',
-  'North Western University, Khulna',
   'Sheikh Burhanuddin & Khulna Region Colleges',
 ]
 
@@ -196,6 +210,10 @@ const popularPathways = [
 ]
 
 const faqs = [
+  {
+    q: 'NUBTK বা North Western University Khulna থেকে পাস করে কি IELTS ছাড়া সরাসরি UK Master’s-এ আবেদন করা যায়?',
+    a: 'হ্যাঁ, ১০০% সম্ভব! NUBTK (Northern University of Business & Technology Khulna) এবং North Western University (NWU)-এর BBA, CSE, LLB, English ইত্যাদি বিভাগের শিক্ষার্থীরা ভার্সিটি থেকে প্রাপ্ত English Medium of Instruction (MOI) সার্টিফিকেট জমা দিয়ে সরাসরি কোনো IELTS ছাড়াই BPP University, Ulster University সহ একাধিক শীর্ষ ব্রিটিশ বিশ্ববিদ্যালয়ে Master’s ও MBA-তে অ্যাডমিশন ও CAS নিশ্চিত করতে পারেন।',
+  },
   {
     q: 'খুলনায় সেজ রুটস ইন্টারন্যাশনাল কীভাবে সার্ভিস প্রদান করে?',
     a: 'খুলনার শিক্ষার্থীদের সুবিধার জন্য আমাদের রয়েছে ডেডিকেটেড অনলাইন ও সরাসরি হোয়াটসঅ্যাপ সাপোর্ট ডেস্ক। আপনার সব ডকুমেন্টস অনলাইনেই স্ক্যান করে পাঠাতে পারেন। আমাদের লন্ডনের অভিজ্ঞ কাউন্সিলররা সরাসরি আপনার ফাইল হ্যান্ডেল করবেন এবং যুক্তরাজ্যের ইউনিভার্সিটির সাথে যোগাযোগ করে দ্রুত অফার লেটার এনে দেবেন।',
@@ -241,7 +259,7 @@ export default function KhulnaPage() {
           </h1>
 
           <p className="text-base sm:text-lg lg:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed mb-8">
-            খুলনা বিশ্ববিদ্যালয় (KU), কুয়েট (KUET), বি এল কলেজসহ খুলনার সকল শিক্ষার্থীদের জন্য <strong>লন্ডন হেড অফিস</strong> পরিচালিত <strong>১০০% ফ্রি</strong> অ্যাডমিশন, আপ টু £10,000 স্কলারশিপ, IELTS/MOI সুবিধা ও লন্ডনে পৌঁছানোর পর ১০০% পার্ট-টাইম জব নিশ্চয়তা।
+            <strong>NUBTK</strong>, <strong>North Western University (NWU)</strong>, খুলনা বিশ্ববিদ্যালয় (KU), কুয়েট (KUET) ও বি এল কলেজসহ খুলনার সকল শিক্ষার্থীদের জন্য <strong>লন্ডন হেড অফিস</strong> পরিচালিত <strong>১০০% ফ্রি</strong> অ্যাডমিশন, আপ টু £10,000 স্কলারশিপ, IELTS ছাড়া MOI সুবিধা ও লন্ডনে পৌঁছানোর পর ১০০% পার্ট-টাইম জব নিশ্চয়তা।
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -342,6 +360,59 @@ export default function KhulnaPage() {
 
           <div className="mt-8 text-center text-xs sm:text-sm text-gray-500">
             এছাড়াও যশোর, সাতক্ষীরা, বাগেরহাট ও সমগ্র খুলনা বিভাগের শিক্ষার্থীরা সরাসরি আমাদের সার্ভিস পাচ্ছেন।
+          </div>
+        </div>
+      </section>
+
+      {/* Special MOI & Fast-Track Desk for NUBTK & North Western University */}
+      <section className="py-16 bg-gradient-to-r from-emerald-950 via-[#073224] to-emerald-900 text-white px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white/5 border border-emerald-400/30 rounded-3xl p-6 sm:p-10 backdrop-blur-md">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+              <div className="max-w-3xl">
+                <div className="inline-flex items-center gap-2 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full px-3.5 py-1 text-xs font-bold mb-3">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  NUBTK &amp; NWU Khulna Dedicated Fast-Track Desk
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-black leading-snug mb-3">
+                  NUBTK ও North Western University-এর শিক্ষার্থীদের জন্য বিশেষ সুযোগ
+                </h3>
+                <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
+                  নর্দার্ন ইউনিভার্সিটি (NUBTK) এবং নর্থ ওয়েস্টার্ন ইউনিভার্সিটি (NWU) থেকে BBA, CSE, EEE, LLB, ও English সম্পন্ন করা শিক্ষার্থীরা কোনো <strong>IELTS ছাড়াই শুধুমাত্র Medium of Instruction (MOI)</strong> লেটার দিয়ে যুক্তরাজ্যের নামকরা বিশ্ববিদ্যালয়ে সরাসরি Master’s ও MBA-তে ভর্তি হতে পারছেন।
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
+                  <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                    <span><strong>IELTS Waiver:</strong> ১০০% MOI সার্টিফিকেট গ্রহণযোগ্য</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                    <span><strong>Low CAS Deposit:</strong> সর্বনিম্ন £3,000 থেকে ডিপোজিট</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                    <span><strong>Study Gap:</strong> ৫ থেকে ৭ বছর পর্যন্ত স্টাডি গ্যাপ গ্রহণযোগ্য</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                    <span><strong>London Job Guarantee:</strong> পৌঁছানোর পর পার্ট-টাইম কাজ নিশ্চিত</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-shrink-0 w-full lg:w-auto">
+                <a
+                  href="https://wa.me/447776181483?text=Hello%2C%20I%20am%20a%20student%20from%20NUBTK%20%2F%20North%20Western%20University%20Khulna%20interested%20in%20UK%20admissions."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-[#073224] font-black text-sm px-6 py-4 rounded-xl shadow-lg transition"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  NUBTK &amp; NWU WhatsApp হেল্পডেস্ক
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

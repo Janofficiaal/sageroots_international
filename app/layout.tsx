@@ -40,7 +40,13 @@ export const metadata: Metadata = {
     'education consultancy Stratford London E15 1XH',
     '100% part time job support UK students London',
     'UK scholarship for international students',
+    'best UK student consultancy in Khulna',
+    'study abroad consultancy in Khulna',
+    'education consultancy in Khulna',
+    'uk student visa agency in Khulna',
     'যুক্তরাজ্যে উচ্চশিক্ষা',
+    'খুলনায় সেরা ইউকে স্টুডেন্ট ভিসা কনসালটেন্সি',
+    'খুলনা স্টুডেন্ট কনসালটেন্সি',
     'IELTS ছাড়া UK স্টুডেন্ট ভিসা',
   ],
   alternates: {
@@ -149,6 +155,8 @@ const globalSchemaJsonLd = {
       areaServed: [
         { '@type': 'Country', name: 'United Kingdom' },
         { '@type': 'Country', name: 'Bangladesh' },
+        { '@type': 'City', name: 'Khulna' },
+        { '@type': 'AdministrativeArea', name: 'Khulna Division' },
         { '@type': 'Country', name: 'India' },
         { '@type': 'Country', name: 'Cyprus' },
         { '@type': 'Country', name: 'Malta' },

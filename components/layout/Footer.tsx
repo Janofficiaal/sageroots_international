@@ -7,6 +7,7 @@ const quickLinks = [
   { label: 'UK Universities (50+)', href: '/universities' },
   { label: 'Study Destinations (10)', href: '/destinations' },
   { label: 'Daily Facebook Posts', href: '/posts' },
+  { label: 'Khulna Desk (খুলনা শাখা)', href: '/khulna' },
   { label: 'Our Services', href: '/services' },
   { label: 'Foundation Courses', href: '/foundation' },
   { label: 'Scholarships (£ GBP)', href: '/scholarships' },
@@ -28,6 +29,10 @@ const destinations = [
 ]
 
 const seoPathways = [
+  {
+    label: 'Best UK Student Consultancy in Khulna (খুলনা স্টুডেন্ট সাপোর্ট)',
+    href: '/khulna',
+  },
   {
     label: 'BPP University 2nd Master’s (£12,500 Fee / £3,000 Deposit)',
     href: '/posts/bpp-university-second-masters-in-uk-psw-ending-tuition-fee-reduced',
@@ -185,7 +190,7 @@ export default function Footer() {
                 <span className="block text-white font-semibold">44 Broadway, Stratford</span>
                 <span className="text-white/60 text-xs block">London E15 1XH, United Kingdom</span>
                 <span className="text-white/40 text-xs block mt-1">
-                  Regional Desks: Dhaka (Bangladesh) • Kolkata &amp; Hyderabad (India)
+                  Regional Desks: Khulna &amp; Dhaka (Bangladesh) • Kolkata &amp; Hyderabad (India)
                 </span>
               </li>
               <li className="text-white/60 text-sm">
@@ -233,7 +238,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-[11px] text-white/35 mt-5 leading-relaxed">
-            Sage Roots International (সেজ রুটস ইন্টারন্যাশনাল লন্ডন) — যুক্তরাজ্যে উচ্চশিক্ষা, IELTS বা MOI দিয়ে UK, Cyprus, Malta ও Dubai-এর শীর্ষ ইউনিভার্সিটিতে ভর্তি, আপ টু £10,000 স্কলারশিপ, 2nd Master’s after PSW, এবং লন্ডনে ১০০% পার্ট-টাইম জব ও ক্যারিয়ার গাইডলাইন।
+            Sage Roots International (সেজ রুটস ইন্টারন্যাশনাল লন্ডন) — খুলনা, ঢাকা ও সমগ্র বাংলাদেশের শিক্ষার্থীদের যুক্তরাজ্যে উচ্চশিক্ষা, IELTS বা MOI দিয়ে UK, Cyprus, Malta ও Dubai-এর শীর্ষ ইউনিভার্সিটিতে ভর্তি, আপ টু £10,000 স্কলারশিপ, 2nd Master’s after PSW, এবং লন্ডনে ১০০% পার্ট-টাইম জব ও ক্যারিয়ার গাইডলাইন।
           </p>
         </div>
       </div>

@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/foundation',
     '/success-stories',
     '/posts',
+    '/khulna',
+    '/study-abroad-consultancy-in-khulna',
     '/contact',
     '/privacy-policy',
     '/terms',

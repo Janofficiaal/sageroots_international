@@ -33,6 +33,29 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Regional Desk Banner */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 mb-2">
+        <div className="bg-white border border-emerald-200 rounded-2xl p-5 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
+            <div>
+              <p className="text-[#073224] font-bold text-sm">
+                Khulna Regional Student Desk (খুলনা সাপোর্ট ডেস্ক)
+              </p>
+              <p className="text-gray-500 text-xs mt-0.5">
+                Specialized admissions &amp; visa guidance for students from Khulna University, KUET, BL College &amp; Khulna Division.
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/khulna"
+            className="inline-flex items-center gap-1.5 bg-[#073224] hover:bg-emerald-800 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition whitespace-nowrap"
+          >
+            Visit Khulna Hub →
+          </Link>
+        </div>
+      </section>
+
       {/* Contact details */}
       <section className="py-14 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 mb-4">

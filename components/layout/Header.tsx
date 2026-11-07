@@ -32,6 +32,17 @@ const navItems = [
   { label: 'Universities', href: '/universities' },
   { label: 'Courses', href: '/courses' },
   { label: 'Scholarships', href: '/scholarships' },
+  {
+    label: 'Tools & Guides',
+    href: '/eligibility-checker',
+    children: [
+      { label: 'MOI & Eligibility Checker', href: '/eligibility-checker' },
+      { label: 'UKVI 28-Day Bank Calculator', href: '/#bank-calculator' },
+      { label: 'Pre-CAS & Interview Guide', href: '/#uk-admission-guide' },
+      { label: 'UK Intake Calendar 2027', href: '/#uk-intake-calendar' },
+      { label: 'Khulna Regional Desk', href: '/khulna' },
+    ],
+  },
   { label: 'Success Stories', href: '/success-stories' },
   { label: 'Posts', href: '/posts' },
   {

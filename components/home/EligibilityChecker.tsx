@@ -5,23 +5,52 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {
   GraduationCap,
-  Sparkles,
   CheckCircle2,
-  HelpCircle,
   ArrowRight,
   MessageCircle,
-  Building,
-  Coins,
-  ShieldCheck,
-  Briefcase,
+  Building2,
+  Sparkles,
+  BookOpen,
+  Globe,
+  BadgeCheck,
+  Search,
 } from 'lucide-react'
 import { universities } from '@/data/universities'
 
-type UniBackground = 'private_moi' | 'public_moi' | 'national_univ' | 'hsc_college'
-type EnglishTier = 'moi_certificate' | 'ielts_65' | 'ielts_60' | 'ielts_55_internal'
-type TargetIntake = 'jan_2027' | 'sept_2027'
+/* ─── Types ─── */
+type StudyLevel = 'Postgraduate' | 'Undergraduate' | 'Foundation'
+type UniBackground = 'private' | 'public' | 'national' | 'hsc'
+type EnglishStatus = 'moi' | 'ielts_60' | 'ielts_65' | 'ielts_55'
 
-const RUSSELL_SLUGS = new Set([
+/* ─── Partner slugs that accept MOI (no IELTS) ─── */
+const MOI_PARTNERS = new Set([
+  'bpp-university',
+  'ulster-university',
+  'university-of-greenwich',
+  'university-of-hertfordshire',
+  'university-of-roehampton',
+  'university-of-bedfordshire',
+  'anglia-ruskin-university',
+  'coventry-university',
+  'university-of-portsmouth',
+  'university-of-sunderland',
+  'university-of-east-london',
+  'london-metropolitan-university',
+  'university-of-northampton',
+  'university-of-bolton',
+  'bucks-new-university',
+  'university-of-central-lancashire',
+  'canterbury-christ-church-university',
+  'university-of-suffolk',
+  'birmingham-city-university',
+  'university-of-wolverhampton',
+  'de-montfort-university',
+  'university-of-the-west-of-scotland',
+  'abertay-university',
+])
+
+/* ─── Russell Group slugs ─── */
+const RUSSELL_GROUP = new Set([
   'imperial-college-london',
   'university-college-london',
   'london-school-of-economics',
@@ -46,114 +75,53 @@ const RUSSELL_SLUGS = new Set([
   'queens-university-belfast',
 ])
 
-const MOI_PARTNER_SLUGS = [
-  'bpp-university',
-  'ulster-university',
-  'university-of-greenwich',
-  'university-of-hertfordshire',
-  'university-of-roehampton',
-  'university-of-bedfordshire',
-  'anglia-ruskin-university',
-  'coventry-university',
-  'university-of-portsmouth',
-  'university-of-sunderland',
-]
-
 export default function EligibilityChecker() {
-  const [level, setLevel] = useState<string>('Postgraduate')
-  const [uniBackground, setUniBackground] = useState<UniBackground>('private_moi')
-  const [cgpa, setCgpa] = useState<string>('cgpa_medium')
-  const [english, setEnglish] = useState<EnglishTier>('moi_certificate')
-  const [intake, setIntake] = useState<TargetIntake>('jan_2027')
+  const [level, setLevel] = useState<StudyLevel>('Postgraduate')
+  const [background, setBackground] = useState<UniBackground>('private')
+  const [english, setEnglish] = useState<EnglishStatus>('moi')
+  const [showResults, setShowResults] = useState(false)
 
-  const calculation = useMemo(() => {
-    // Determine MOI eligibility
-    const isMoiEligible =
-      (uniBackground === 'private_moi' || uniBackground === 'public_moi') &&
-      (english === 'moi_certificate' || english === 'ielts_55_internal')
-
-    // Find matched universities
-    let matched = universities.filter((u) => {
+  /* ─── Filter matching universities ─── */
+  const results = useMemo(() => {
+    const matched = universities.filter((u) => {
+      // Must offer the selected study level
       if (!u.studyLevels.includes(level)) return false
 
-      const isRussell = RUSSELL_SLUGS.has(u.slug)
-
-      if (english === 'moi_certificate') {
-        return MOI_PARTNER_SLUGS.includes(u.slug)
+      // English filter
+      if (english === 'moi') {
+        return MOI_PARTNERS.has(u.slug)
       }
-
-      if (english === 'ielts_55_internal' && isRussell) {
-        return false
+      if (english === 'ielts_55') {
+        // IELTS 5.5 — exclude Russell Group
+        return !RUSSELL_GROUP.has(u.slug)
       }
-
+      if (english === 'ielts_60') {
+        // IELTS 6.0 — all non-Russell + some Russell
+        return true
+      }
+      // ielts_65 — all universities eligible
       return true
     })
 
-    if (matched.length < 4) {
-      const fallback = universities.filter(
-        (u) => MOI_PARTNER_SLUGS.includes(u.slug) && u.studyLevels.includes(level)
-      )
-      matched = fallback.length ? fallback : universities.slice(0, 6)
+    return matched
+  }, [level, background, english])
+
+  /* WhatsApp link generator */
+  const waLink = () => {
+    const bgMap: Record<UniBackground, string> = {
+      private: 'Private University (NUBTK/NWU/AIUB)',
+      public: 'Public University (KUET/KU/DU)',
+      national: 'National University',
+      hsc: 'HSC / A-Level / Diploma',
     }
-
-    // Scholarship calculation logic
-    let scholarshipGbp = 2500
-    let avgTuitionGbp = 14500
-    let minDepositGbp = 3000
-    let badgeText = 'IELTS Waiver (MOI) Verified'
-    let summaryNote =
-      'আপনার পূর্ববর্তী ডিগ্রি অনুযায়ী কোনো IELTS ছাড়াই Medium of Instruction (MOI) দিয়ে সরাসরি Master’s/MBA প্রোগ্রামে অফার লেটার ও স্কলারশিপ পাওয়ার ১০০% সুযোগ রয়েছে।'
-
-    if (english === 'ielts_65' && cgpa === 'cgpa_high') {
-      scholarshipGbp = 4500
-      avgTuitionGbp = 16500
-      minDepositGbp = 4000
-      badgeText = 'Top Merit & Russell Group Eligible'
-      summaryNote =
-        'অসাধারণ সিজিপিএ এবং IELTS 6.5+ স্কোরের কারণে আপনি যুক্তরাজ্যের শীর্ষ ইউনিভার্সিটি ও ভাইস-চ্যান্সেলর মেরিট স্কলারশিপের জন্য যোগ্য।'
-    } else if (uniBackground === 'national_univ') {
-      scholarshipGbp = 2000
-      avgTuitionGbp = 13800
-      minDepositGbp = 3500
-      badgeText = 'National Univ Fast-Track Pathway'
-      summaryNote =
-        'জাতীয় বিশ্ববিদ্যালয়ের শিক্ষার্থীদের জন্য প্রাক-মাস্টার্স ও ইন্টারনাল ইংলিশ টেস্ট বা ডুওলিঙ্গো দিয়ে দ্রুত ইউকে ভিসা প্রসেসিং সুবিধা।'
-    } else if (english === 'moi_certificate') {
-      scholarshipGbp = 3000
-      avgTuitionGbp = 12500
-      minDepositGbp = 3000
-      badgeText = '100% MOI Accepted (No IELTS)'
-      summaryNote =
-        'NUBTK, North Western, KUET, KU ও প্রাইভেট/পাবলিক ভার্সিটি গ্র্যাজুয়েটদের জন্য সরাসরি MOI দিয়ে BPP, Ulster ও অন্যান্য শীর্ষ ক্যাম্পাসে ভর্তি।'
+    const engMap: Record<EnglishStatus, string> = {
+      moi: 'MOI (No IELTS)',
+      ielts_55: 'IELTS 5.5 / Internal Test',
+      ielts_60: 'IELTS 6.0 / Duolingo 105+',
+      ielts_65: 'IELTS 6.5+ (Russell Group)',
     }
-
-    const netTuitionGbp = avgTuitionGbp - scholarshipGbp
-    const gbpToBdtRate = 158 // live reference approx
-    const netTuitionBdt = Math.round(netTuitionGbp * gbpToBdtRate).toLocaleString('en-IN')
-    const depositBdt = Math.round(minDepositGbp * gbpToBdtRate).toLocaleString('en-IN')
-
-    return {
-      matchedUnis: matched.slice(0, 6),
-      isMoiEligible,
-      scholarshipGbp,
-      avgTuitionGbp,
-      netTuitionGbp,
-      minDepositGbp,
-      netTuitionBdt,
-      depositBdt,
-      badgeText,
-      summaryNote,
-    }
-  }, [level, uniBackground, cgpa, english, intake])
-
-  const generateWhatsAppLink = () => {
     const text = encodeURIComponent(
-      `Hello Sage Roots Team, I checked my UK Eligibility on the website:
-• Degree Level: ${level}
-• Background: ${uniBackground === 'private_moi' ? 'Private Univ (NUBTK/NWU/etc)' : uniBackground === 'public_moi' ? 'Public Univ (KU/KUET/etc)' : 'National Univ/College'}
-• English Status: ${english === 'moi_certificate' ? 'MOI (No IELTS)' : english}
-• Target Intake: ${intake === 'jan_2027' ? 'January 2027' : 'September 2027'}
-Please assess my admission & scholarship options.`
+      `Hello Sage Roots Team,\nI checked eligibility on your website:\n• Level: ${level}\n• Background: ${bgMap[background]}\n• English: ${engMap[english]}\n• Matched: ${results.length} universities\nPlease guide me for admission & scholarship.`
     )
     return `https://wa.me/447776181483?text=${text}`
   }
@@ -161,184 +129,114 @@ Please assess my admission & scholarship options.`
   return (
     <section
       id="eligibility-checker"
-      className="py-20 bg-gradient-to-b from-[#031812] via-[#073224] to-[#042017] text-white relative overflow-hidden"
+      className="py-16 sm:py-20 bg-gradient-to-b from-[#f8faf9] to-white relative overflow-hidden"
       aria-labelledby="eligibility-heading"
     >
-      {/* Background Glows */}
-      <div
-        className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-amber-400/10 blur-3xl pointer-events-none"
-        aria-hidden="true"
-      />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4 backdrop-blur-md">
-            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            Live Assessment &amp; Net Cost Calculator
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* ── Section Header ── */}
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+            <Search className="w-3.5 h-3.5" />
+            Instant University Finder
           </div>
           <h2
             id="eligibility-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white mb-4"
+            className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 tracking-tight mb-3"
           >
-            UK Eligibility, MOI &amp; Cost Calculator
+            আপনি কোন কোন University-তে <span className="text-emerald-600">Apply করতে পারবেন?</span>
           </h2>
-          <p className="text-emerald-100/80 text-sm sm:text-base leading-relaxed">
-            আপনার অ্যাকাডেমিক ব্যাকগ্রাউন্ড (NUBTK, NWU, KUET, KU, ন্যাশনাল ভার্সিটি) ও ইংলিশ স্ট্যাটাস সিলেক্ট করে সরাসরি দেখুন কোন কোন ইউনিভার্সিটিতে <strong>IELTS ছাড়া MOI দিয়ে ভর্তি</strong>, স্কলারশিপ ও মিনিমাম কত ডিপোজিটে ক্যাশ (CAS) পাওয়া যাবে।
+          <p className="text-gray-500 text-sm sm:text-base">
+            ৩টি অপশন সিলেক্ট করুন — সাথে সাথে দেখুন আপনার জন্য কোন বিশ্ববিদ্যালয় উপযুক্ত
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Panel: Interactive Inputs (5 cols) */}
-          <div className="lg:col-span-5 bg-white/5 backdrop-blur-md border border-white/15 rounded-3xl p-6 sm:p-7 space-y-5">
-            {/* 1. Target Study Level */}
+        {/* ── Filter Bar ── */}
+        <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-5 sm:p-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {/* 1. Study Level */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-emerald-300 mb-2.5">
-                ১. কোন কোর্সে আবেদন করতে চান?
+              <label className="flex items-center gap-2 text-xs font-bold text-gray-800 uppercase tracking-wider mb-3">
+                <GraduationCap className="w-4 h-4 text-emerald-600" />
+                Study Level
               </label>
-              <div className="grid grid-cols-3 gap-2">
-                {['Postgraduate', 'Undergraduate', 'Foundation'].map((item) => (
+              <div className="flex flex-wrap gap-2">
+                {(
+                  [
+                    { id: 'Postgraduate', label: "Master's / MBA" },
+                    { id: 'Undergraduate', label: 'Undergraduate' },
+                    { id: 'Foundation', label: 'Foundation' },
+                  ] as { id: StudyLevel; label: string }[]
+                ).map((opt) => (
                   <button
-                    key={item}
+                    key={opt.id}
                     type="button"
-                    onClick={() => setLevel(item)}
-                    className={`py-2 px-3 rounded-xl text-xs font-bold border transition-all text-center ${
-                      level === item
-                        ? 'bg-emerald-500 text-[#042017] border-emerald-400 shadow-md font-extrabold'
-                        : 'bg-white/5 text-white/80 border-white/10 hover:bg-white/10'
+                    onClick={() => { setLevel(opt.id); setShowResults(true) }}
+                    className={`px-4 py-2 rounded-full text-xs font-bold border transition-all ${
+                      level === opt.id
+                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-md'
+                        : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-emerald-50 hover:border-emerald-300'
                     }`}
                   >
-                    {item === 'Postgraduate' ? "Master's/MBA" : item}
+                    {opt.label}
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* 2. Educational Institution Background */}
+            {/* 2. Background */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-emerald-300 mb-2.5">
-                ২. পূর্ববর্তী শিক্ষা প্রতিষ্ঠানের ধরন
+              <label className="flex items-center gap-2 text-xs font-bold text-gray-800 uppercase tracking-wider mb-3">
+                <BookOpen className="w-4 h-4 text-emerald-600" />
+                Your Background
               </label>
-              <div className="space-y-2">
-                {[
-                  {
-                    id: 'private_moi' as UniBackground,
-                    title: 'Private University (NUBTK, NWU, AIUB, etc.)',
-                    desc: '১০০% ইংরেজি মাধ্যমে পড়াশোনা (MOI Eligible)',
-                  },
-                  {
-                    id: 'public_moi' as UniBackground,
-                    title: 'Public University (KUET, KU, DU, RU, etc.)',
-                    desc: 'পাবলিক ভার্সিটি অনার্স/মাস্টার্স (Direct & MOI)',
-                  },
-                  {
-                    id: 'national_univ' as UniBackground,
-                    title: 'National University (BL College, City College, etc.)',
-                    desc: 'জাতীয় বিশ্ববিদ্যালয় ডিগ্রি / অনার্স পাস',
-                  },
-                  {
-                    id: 'hsc_college' as UniBackground,
-                    title: 'HSC / A-Level / Diploma College',
-                    desc: 'আন্ডারগ্র্যাজুয়েট ও ফাউন্ডেশন লেভেল',
-                  },
-                ].map((opt) => (
+              <div className="flex flex-wrap gap-2">
+                {(
+                  [
+                    { id: 'private', label: 'Private Univ' },
+                    { id: 'public', label: 'Public Univ' },
+                    { id: 'national', label: 'National Univ' },
+                    { id: 'hsc', label: 'HSC / Diploma' },
+                  ] as { id: UniBackground; label: string }[]
+                ).map((opt) => (
                   <button
                     key={opt.id}
                     type="button"
-                    onClick={() => setUniBackground(opt.id)}
-                    className={`w-full text-left p-3 rounded-xl border transition-all flex items-center justify-between ${
-                      uniBackground === opt.id
-                        ? 'bg-emerald-500/25 border-emerald-400 text-white font-bold'
-                        : 'bg-white/5 border-white/10 text-white/75 hover:bg-white/10'
+                    onClick={() => { setBackground(opt.id); setShowResults(true) }}
+                    className={`px-4 py-2 rounded-full text-xs font-bold border transition-all ${
+                      background === opt.id
+                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-md'
+                        : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-emerald-50 hover:border-emerald-300'
                     }`}
                   >
-                    <div>
-                      <p className="text-xs sm:text-sm font-semibold text-white">{opt.title}</p>
-                      <p className="text-[11px] text-emerald-200/60">{opt.desc}</p>
-                    </div>
-                    <div
-                      className={`w-4 h-4 rounded-full border flex items-center justify-center flex-shrink-0 ${
-                        uniBackground === opt.id ? 'border-emerald-400 bg-emerald-400' : 'border-white/30'
-                      }`}
-                    />
+                    {opt.label}
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* 3. English Proficiency / MOI */}
+            {/* 3. English Status */}
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-emerald-300 mb-2.5">
-                ৩. ইংলিশ টেস্ট ও MOI সার্টিফিকেট স্ট্যাটাস
+              <label className="flex items-center gap-2 text-xs font-bold text-gray-800 uppercase tracking-wider mb-3">
+                <Globe className="w-4 h-4 text-emerald-600" />
+                English Proficiency
               </label>
-              <div className="space-y-2">
-                {[
-                  {
-                    id: 'moi_certificate' as EnglishTier,
-                    label: 'Medium of Instruction (MOI) - কোনো IELTS লাগবে না',
-                    badge: 'No IELTS',
-                  },
-                  {
-                    id: 'ielts_60' as EnglishTier,
-                    label: 'IELTS 6.0 / Duolingo 105+ / PTE 54+',
-                    badge: 'Popular',
-                  },
-                  {
-                    id: 'ielts_65' as EnglishTier,
-                    label: 'IELTS 6.5+ / PTE 62+ (Russell Group Eligible)',
-                    badge: 'High Merit',
-                  },
-                  {
-                    id: 'ielts_55_internal' as EnglishTier,
-                    label: 'IELTS 5.5 অথবা ভার্সিটির ফ্রি ইন্টারনাল টেস্ট',
-                    badge: 'Flexible',
-                  },
-                ].map((opt) => (
+              <div className="flex flex-wrap gap-2">
+                {(
+                  [
+                    { id: 'moi', label: 'MOI (No IELTS)' },
+                    { id: 'ielts_55', label: 'IELTS 5.5' },
+                    { id: 'ielts_60', label: 'IELTS 6.0' },
+                    { id: 'ielts_65', label: 'IELTS 6.5+' },
+                  ] as { id: EnglishStatus; label: string }[]
+                ).map((opt) => (
                   <button
                     key={opt.id}
                     type="button"
-                    onClick={() => setEnglish(opt.id)}
-                    className={`w-full text-left p-2.5 rounded-xl text-xs sm:text-sm font-semibold border transition-all flex items-center justify-between ${
+                    onClick={() => { setEnglish(opt.id); setShowResults(true) }}
+                    className={`px-4 py-2 rounded-full text-xs font-bold border transition-all ${
                       english === opt.id
-                        ? 'bg-emerald-500 text-[#042017] border-emerald-400 font-bold'
-                        : 'bg-white/5 text-white/80 border-white/10 hover:bg-white/10'
-                    }`}
-                  >
-                    <span>{opt.label}</span>
-                    <span
-                      className={`text-[10px] px-2 py-0.5 rounded-full font-bold uppercase ${
-                        english === opt.id ? 'bg-[#042017] text-emerald-300' : 'bg-white/10 text-white/70'
-                      }`}
-                    >
-                      {opt.badge}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* 4. Target Intake */}
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-emerald-300 mb-2.5">
-                ৪. সম্ভাব্য ভর্তি সেশন (Intake)
-              </label>
-              <div className="grid grid-cols-2 gap-2">
-                {[
-                  { id: 'jan_2027' as TargetIntake, label: 'January 2027 (Now Open)' },
-                  { id: 'sept_2027' as TargetIntake, label: 'September 2027' },
-                ].map((opt) => (
-                  <button
-                    key={opt.id}
-                    type="button"
-                    onClick={() => setIntake(opt.id)}
-                    className={`p-2.5 rounded-xl border text-center text-xs font-bold transition-all ${
-                      intake === opt.id
-                        ? 'bg-emerald-500 text-[#042017] border-emerald-400 font-extrabold shadow-md'
-                        : 'bg-white/5 text-white/80 border-white/10 hover:bg-white/10'
+                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-md'
+                        : 'bg-gray-50 text-gray-600 border-gray-200 hover:bg-emerald-50 hover:border-emerald-300'
                     }`}
                   >
                     {opt.label}
@@ -347,144 +245,149 @@ Please assess my admission & scholarship options.`
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Right Panel: Live Calculation & Results (7 cols) */}
-          <div className="lg:col-span-7 space-y-6">
-            {/* Financial Summary Card */}
-            <div className="bg-gradient-to-r from-emerald-600/30 via-[#073224] to-emerald-800/40 border border-emerald-400/40 rounded-3xl p-6 sm:p-8 backdrop-blur-md">
-              <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-                <span className="bg-emerald-400 text-[#042017] text-xs font-black px-3.5 py-1 rounded-full">
-                  {calculation.badgeText}
-                </span>
-                <span className="text-amber-300 text-xs font-bold flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4" /> £0 Agency Processing Fee
-                </span>
+        {/* ── Results ── */}
+        {showResults && (
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* Result count bar */}
+            <div className="flex items-center justify-between mb-5 flex-wrap gap-3">
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full">
+                  <Building2 className="w-4 h-4" />
+                  <span className="text-sm font-bold">{results.length} Universities Found</span>
+                </div>
+                {english === 'moi' && (
+                  <span className="inline-flex items-center gap-1.5 bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-full">
+                    <BadgeCheck className="w-3.5 h-3.5" />
+                    IELTS ছাড়া MOI দিয়ে যোগ্য
+                  </span>
+                )}
               </div>
-
-              {/* Dynamic Cost Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 my-5">
-                <div className="bg-black/30 border border-white/10 rounded-2xl p-4">
-                  <p className="text-[11px] text-emerald-200/70 font-semibold uppercase">গড় টিউশন ফি</p>
-                  <p className="text-xl sm:text-2xl font-black text-white mt-1">
-                    £{calculation.avgTuitionGbp.toLocaleString()}
-                  </p>
-                  <p className="text-[10px] text-white/50">কোর্স অনুযায়ী বার্ষিক ফি</p>
-                </div>
-
-                <div className="bg-emerald-500/20 border border-emerald-400/40 rounded-2xl p-4">
-                  <p className="text-[11px] text-emerald-300 font-semibold uppercase">স্কলারশিপ ছাড়</p>
-                  <p className="text-xl sm:text-2xl font-black text-emerald-300 mt-1">
-                    -£{calculation.scholarshipGbp.toLocaleString()}
-                  </p>
-                  <p className="text-[10px] text-emerald-200/70">অটোমেটিক মেরিট ওয়েভার</p>
-                </div>
-
-                <div className="bg-amber-400/15 border border-amber-400/30 rounded-2xl p-4">
-                  <p className="text-[11px] text-amber-200 font-semibold uppercase">মিনিমাম CAS ডিপোজিট</p>
-                  <p className="text-xl sm:text-2xl font-black text-amber-300 mt-1">
-                    £{calculation.minDepositGbp.toLocaleString()}
-                  </p>
-                  <p className="text-[10px] text-amber-100/70">প্রায় ৳{calculation.depositBdt} BDT</p>
-                </div>
-              </div>
-
-              <div className="bg-white/5 rounded-2xl p-4 border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div>
-                  <p className="text-xs text-white/75">
-                    স্কলারশিপ বাদে নিট টিউশন ফি: <strong className="text-emerald-300 font-black">£{calculation.netTuitionGbp.toLocaleString()}</strong> (প্রায় ৳{calculation.netTuitionBdt} BDT)
-                  </p>
-                  <p className="text-[11px] text-white/60 mt-0.5">{calculation.summaryNote}</p>
-                </div>
-                <a
-                  href={generateWhatsAppLink()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-[#042017] font-black text-xs sm:text-sm px-5 py-3 rounded-xl transition shadow-md whitespace-nowrap"
-                >
-                  <MessageCircle className="w-4 h-4" />
-                  এই প্রোফাইলে আবেদন করুন
-                </a>
-              </div>
+              <Link
+                href="/universities"
+                className="text-xs font-bold text-emerald-600 hover:text-emerald-800 underline underline-offset-4 flex items-center gap-1"
+              >
+                সকল ৫০+ বিশ্ববিদ্যালয় দেখুন <ArrowRight className="w-3 h-3" />
+              </Link>
             </div>
 
-            {/* Matching Universities List */}
-            <div>
-              <div className="flex items-center justify-between mb-4">
-                <h4 className="text-sm sm:text-base font-bold text-emerald-200 flex items-center gap-2">
-                  <Building className="w-4 h-4 text-emerald-400" />
-                  আপনার জন্য প্রস্তাবিত সেরা বিশ্ববিদ্যালয়সমূহ ({calculation.matchedUnis.length})
-                </h4>
-                <Link
-                  href="/universities"
-                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 underline underline-offset-4"
-                >
-                  সকল ৫০+ বিশ্ববিদ্যালয় দেখুন
-                </Link>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {calculation.matchedUnis.map((uni) => (
+            {/* University Cards Grid */}
+            {results.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {results.map((uni) => (
                   <div
                     key={uni.id}
-                    className="bg-white text-brand-dark rounded-2xl p-4 border border-emerald-100 shadow-md flex flex-col justify-between hover:-translate-y-0.5 transition-transform"
+                    className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                   >
-                    <div>
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="relative w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 ring-1 ring-gray-100">
-                          <Image
-                            src={uni.image}
-                            alt={uni.name}
-                            fill
-                            className="object-cover"
-                            sizes="48px"
-                          />
-                        </div>
-                        <div className="min-w-0">
-                          <h5 className="font-bold text-sm text-[#06241B] truncate">
-                            {uni.name}
-                          </h5>
-                          <p className="text-xs text-gray-500 mt-0.5 truncate">
-                            {uni.city}, United Kingdom
-                          </p>
-                        </div>
+                    {/* University Image */}
+                    <div className="relative h-36 w-full overflow-hidden">
+                      <Image
+                        src={uni.image}
+                        alt={uni.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                      <div className="absolute bottom-3 left-3 right-3">
+                        <h3 className="text-white font-bold text-sm drop-shadow-md leading-tight">
+                          {uni.name}
+                        </h3>
+                        <p className="text-white/80 text-xs mt-0.5">{uni.city}</p>
                       </div>
-
-                      <div className="bg-emerald-50/80 border border-emerald-100 rounded-xl p-2.5 mb-3 text-xs space-y-1">
-                        <p className="font-bold text-emerald-950 truncate">
-                          ফি: {uni.tuitionFeeNote}
-                        </p>
-                        <p className="text-emerald-700 text-[11px] truncate">
-                          স্কলারশিপ: {uni.scholarshipNote}
-                        </p>
-                        <div className="flex items-center gap-1.5 pt-0.5 text-[10px] text-gray-600 font-semibold">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
-                          <span>MOI ও London Job Support অন্তর্ভুক্ত</span>
-                        </div>
-                      </div>
+                      {MOI_PARTNERS.has(uni.slug) && (
+                        <span className="absolute top-2.5 right-2.5 bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">
+                          MOI ✓
+                        </span>
+                      )}
+                      {RUSSELL_GROUP.has(uni.slug) && (
+                        <span className="absolute top-2.5 right-2.5 bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow">
+                          Russell Group
+                        </span>
+                      )}
                     </div>
 
-                    <div className="flex items-center gap-2 pt-1">
-                      <Link
-                        href={`/universities/${uni.slug}`}
-                        className="flex-1 text-center py-2 px-3 rounded-xl bg-gray-100 hover:bg-gray-200 text-[#06241B] text-xs font-bold transition-colors"
-                      >
-                        বিস্তারিত
-                      </Link>
-                      <a
-                        href={generateWhatsAppLink()}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center py-2 px-3 rounded-xl bg-[#073224] hover:bg-emerald-800 text-white text-xs font-bold transition-colors flex items-center justify-center gap-1"
-                      >
-                        ফ্রি অ্যাডমিশন <ArrowRight className="w-3 h-3" />
-                      </a>
+                    {/* Info */}
+                    <div className="p-4">
+                      <div className="space-y-1.5 mb-3">
+                        <p className="text-xs text-gray-700">
+                          <span className="font-semibold text-gray-900">Fee:</span>{' '}
+                          {uni.tuitionFeeNote}
+                        </p>
+                        <p className="text-xs text-emerald-700">
+                          <span className="font-semibold">Scholarship:</span>{' '}
+                          {uni.scholarshipNote}
+                        </p>
+                      </div>
+
+                      {/* Intakes */}
+                      <div className="flex flex-wrap gap-1.5 mb-4">
+                        {uni.intakes.slice(0, 3).map((intake) => (
+                          <span
+                            key={intake}
+                            className="text-[10px] font-semibold bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full"
+                          >
+                            {intake}
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Actions */}
+                      <div className="flex gap-2">
+                        <Link
+                          href={`/universities/${uni.slug}`}
+                          className="flex-1 text-center py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-bold transition-colors"
+                        >
+                          বিস্তারিত দেখুন
+                        </Link>
+                        <a
+                          href={waLink()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 text-center py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-colors flex items-center justify-center gap-1"
+                        >
+                          Apply Free <ArrowRight className="w-3 h-3" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
+            ) : (
+              <div className="text-center py-16 bg-white rounded-2xl border border-gray-100">
+                <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Search className="w-6 h-6 text-gray-400" />
+                </div>
+                <p className="text-gray-500 text-sm mb-2">এই ক্রাইটেরিয়ায় কোনো ইউনিভার্সিটি পাওয়া যায়নি</p>
+                <p className="text-gray-400 text-xs">অন্য অপশন সিলেক্ট করে আবার চেষ্টা করুন</p>
+              </div>
+            )}
+
+            {/* Bottom CTA */}
+            {results.length > 0 && (
+              <div className="mt-8 bg-gradient-to-r from-[#042017] to-[#073224] rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <p className="text-white font-bold text-sm sm:text-base">
+                    {results.length}টি University-তে <span className="text-emerald-400">ফ্রি এডমিশন প্রসেসিং</span> পাওয়া যাবে
+                  </p>
+                  <p className="text-white/60 text-xs mt-1">
+                    £0 Agency Fee • Scholarship Assessment • London Job Support
+                  </p>
+                </div>
+                <a
+                  href={waLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-sm px-6 py-3 rounded-xl transition shadow-lg whitespace-nowrap"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  WhatsApp-এ জানুন
+                </a>
+              </div>
+            )}
           </div>
-        </div>
+        )}
       </div>
     </section>
   )

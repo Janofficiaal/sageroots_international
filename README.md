@@ -109,6 +109,23 @@ interface University {
 }
 ```
 
+### Eligibility Checker (`/eligibility-checker`)
+The interactive **UK University MOI & Scholarship Eligibility Checker** page lets students:
+- Check MOI vs IELTS eligibility based on their university background (Private, Public, National)
+- Estimate scholarship discounts across partner universities
+- Calculate minimum CAS deposit in GBP & BDT
+- Run a 28-day bank statement calculator for student visa requirements
+
+**To modify eligibility options:**
+Edit `components/home/EligibilityChecker.tsx` — university tiers, scholarship ranges, and English proficiency levels are defined as constants at the top of the file.
+
+**To modify bank statement calculator:**
+Edit `components/home/BankCalculator.tsx` — tuition fees and living-cost parameters are configurable.
+
+The page also includes JSON-LD `WebApplication` structured data for improved SERP appearance (defined in `app/eligibility-checker/page.tsx`).
+
+---
+
 ### Wire Up the Consultation Form
 In `components/home/ConsultationForm.tsx`, replace the demo delay with a real API call:
 ```ts

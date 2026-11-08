@@ -40,7 +40,7 @@ export default function ContactPage() {
             <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
             <div>
               <p className="text-[#073224] font-bold text-sm">
-                Khulna Regional Student Desk (খুলনা সাপোর্ট ডেস্ক)
+                Khulna Regional Student Desk
               </p>
               <p className="text-gray-500 text-xs mt-0.5">
                 Specialized admissions &amp; visa guidance for students from Khulna University, KUET, BL College &amp; Khulna Division.

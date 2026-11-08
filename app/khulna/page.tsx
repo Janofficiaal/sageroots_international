@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     'bl college daulatpur study abroad',
     'sage roots international khulna',
     'best abroad consultancy in khulna city',
-    'খুলনায় সেরা ইউকে স্টুডেন্ট ভিসা কনসালটেন্সি',
-    'খুলনা স্টুডেন্ট কনসালটেন্সি',
+    'best uk student visa agency khulna',
+    'khulna student abroad consultancy',
   ],
   alternates: {
     canonical: '/khulna',
@@ -150,32 +150,32 @@ const keyFeatures = [
   {
     icon: ShieldCheck,
     title: '£0 Agency Processing Fee',
-    desc: 'খুলনার শিক্ষার্থীদের জন্য ফাইল ওপেনিং এবং ইউনিভার্সিটি প্রসেসিং সম্পূর্ণ ফ্রি। কোনো হিডেন চার্জ নেই।',
+    desc: 'File opening and university admission processing are 100% free for all students. No hidden charges or extra fees.',
   },
   {
     icon: Building2,
-    title: 'লন্ডন হেড অফিস থেকে সরাসরি সাপোর্ট',
-    desc: 'আমাদের প্রধান অফিস লন্ডনের স্ট্র্যাটফোর্ডে (Stratford, London)। আপনি সরাসরি ইউকে-ভিত্তিক আসল প্রতিনিধির সাথে কাজ করবেন।',
+    title: 'Direct Support from London Head Office',
+    desc: 'Our headquarters is located at Stratford, London (44 Broadway, E15 1XH). You work directly with genuine UK-based advisors.',
   },
   {
     icon: Briefcase,
-    title: '১০০% পার্ট-টাইম জব নিশ্চয়তা',
-    desc: 'ইউকে পৌঁছানোর সাথে সাথে লন্ডনের স্ট্র্যাটফোর্ড অফিস থেকে পার্ট-টাইম কাজ ও ক্যারিয়ার ট্রেনিং দেওয়া হয়।',
+    title: '100% Part-Time Job Assistance',
+    desc: 'Upon arriving in the UK, receive one-on-one career onboarding, CV optimization, and part-time job placement guidance in London.',
   },
   {
     icon: Award,
-    title: 'আপ টু £10,000 স্কলারশিপ',
-    desc: 'মেধা ও ব্যাকগ্রাউন্ড অনুযায়ী যুক্তরাজ্যের শীর্ষ ইউনিভার্সিটিতে আকর্ষণীয় স্কলারশিপ পাওয়ার সুযোগ।',
+    title: 'Up to £10,000 Scholarships',
+    desc: 'Attractive merit-based and regional scholarship assessment across top British partner universities.',
   },
   {
     icon: FileCheck2,
-    title: 'IELTS ছাড়া MOI সুবিধা',
-    desc: 'খুলনা বিশ্ববিদ্যালয়, কুয়েট বা অন্যান্য স্বীকৃত প্রতিষ্ঠান থেকে পাস করা শিক্ষার্থীরা MOI দিয়ে আবেদন করতে পারবেন।',
+    title: 'IELTS Waiver with MOI',
+    desc: 'Graduates from Khulna University, KUET, NUBTK, NWU, and recognized institutions can apply directly using Medium of Instruction (MOI).',
   },
   {
     icon: Clock,
-    title: 'দ্রুত অফার লেটার ও CAS ডেলিভারি',
-    desc: 'জানুয়ারি ও সেপ্টেম্বর ইনটেকের জন্য ২৪ থেকে ৪৮ ঘণ্টার মধ্যে ডকুমেন্ট অ্যাসেসমেন্ট ও দ্রুত অ্যাডমিশন।',
+    title: 'Fast Offer Letter & CAS Delivery',
+    desc: 'Express document assessment within 24 to 48 hours for upcoming January and September intakes.',
   },
 ]
 
@@ -213,24 +213,24 @@ const popularPathways = [
 
 const faqs = [
   {
-    q: 'NUBTK বা North Western University Khulna থেকে পাস করে কি IELTS ছাড়া সরাসরি UK Master’s-এ আবেদন করা যায়?',
-    a: 'হ্যাঁ, ১০০% সম্ভব! NUBTK (Northern University of Business & Technology Khulna) এবং North Western University (NWU)-এর BBA, CSE, LLB, English ইত্যাদি বিভাগের শিক্ষার্থীরা ভার্সিটি থেকে প্রাপ্ত English Medium of Instruction (MOI) সার্টিফিকেট জমা দিয়ে সরাসরি কোনো IELTS ছাড়াই BPP University, Ulster University সহ একাধিক শীর্ষ ব্রিটিশ বিশ্ববিদ্যালয়ে Master’s ও MBA-তে অ্যাডমিশন ও CAS নিশ্চিত করতে পারেন।',
+    q: 'Can graduates from NUBTK or North Western University Khulna apply for UK Master’s without IELTS?',
+    a: 'Yes, 100% eligible! Graduates from NUBTK (Northern University of Business & Technology Khulna) and North Western University (NWU) in BBA, CSE, LLB, English, etc. can submit their official English Medium of Instruction (MOI) certificate to secure direct Master’s or MBA admission and CAS from top UK universities including BPP University and Ulster University without taking IELTS.',
   },
   {
-    q: 'খুলনায় সেজ রুটস ইন্টারন্যাশনাল কীভাবে সার্ভিস প্রদান করে?',
-    a: 'খুলনার শিক্ষার্থীদের সুবিধার জন্য আমাদের রয়েছে ডেডিকেটেড অনলাইন ও সরাসরি হোয়াটসঅ্যাপ সাপোর্ট ডেস্ক। আপনার সব ডকুমেন্টস অনলাইনেই স্ক্যান করে পাঠাতে পারেন। আমাদের লন্ডনের অভিজ্ঞ কাউন্সিলররা সরাসরি আপনার ফাইল হ্যান্ডেল করবেন এবং যুক্তরাজ্যের ইউনিভার্সিটির সাথে যোগাযোগ করে দ্রুত অফার লেটার এনে দেবেন।',
+    q: 'How does Sage Roots International support students from Khulna?',
+    a: 'We offer a dedicated digital admissions desk and direct WhatsApp consultation for students in Khulna. You can scan and share your academic credentials online. Our London-based senior counselors manage your application directly with UK university admission boards to secure your offer letter swiftly.',
   },
   {
-    q: 'আমি কি IELTS ছাড়া খুলনা থেকে UK-তে আবেদন করতে পারব?',
-    a: 'হ্যাঁ, অবশ্যই! আপনার পূর্ববর্তী ডিগ্রি যদি ইংরেজিতে সম্পন্ন হয়ে থাকে (Medium of Instruction - MOI), তবে যুক্তরাজ্যের অনেক নামকরা পার্টনার ইউনিভার্সিটিতে IELTS ছাড়াই সরাসরি অ্যাডমিশন ও ক্যাশ (CAS) পাওয়া সম্ভব। এছাড়া IELTS 5.5 বা Duolingo স্কোর নিয়েও আবেদন করা যায়।',
+    q: 'Can I apply to UK universities without IELTS from Khulna?',
+    a: 'Yes, absolutely. If your previous degree was taught in English, you qualify for Medium of Instruction (MOI) waivers at leading partner universities across the UK. Alternatively, applications with IELTS 5.5, Duolingo, or internal university English tests are also accepted.',
   },
   {
-    q: 'লন্ডনে পৌঁছানোর পর পার্ট-টাইম জবের ক্ষেত্রে কীভাবে সাপোর্ট পাব?',
-    a: 'লন্ডনের স্ট্র্যাটফোর্ডে (44 Broadway, Stratford, London E15 1XH) আমাদের নিজস্ব হেড অফিস রয়েছে। খুলনার শিক্ষার্থীরা যখন ইউকে পৌঁছায়, আমাদের টিম তাদের এনআই (NI Number), ব্যাংক অ্যাকাউন্ট খোলা, সিভি ফরম্যাটিং এবং কেয়ার/হসপিটালিটি সেক্টরে ১০০% পার্ট-টাইম কাজের ব্যবস্থা করতে সরাসরি সাহায্য করে।',
+    q: 'What part-time job support is provided once I land in London?',
+    a: 'Our London head office is situated at 44 Broadway, Stratford, London E15 1XH. As soon as you arrive, our student welfare team assists you with National Insurance Number (NIN) registration, UK bank account opening, CV tailoring, and connecting with vetted part-time job employers in hospitality, administration, and care sectors.',
   },
   {
-    q: 'ব্যাংক স্টেটমেন্ট ও ভিসা ইন্টারভিউয়ের জন্য কি গাইডলাইন দেওয়া হয়?',
-    a: 'হ্যাঁ। UKVI-এর রুলস অনুযায়ী ২৮ দিনের ব্যাংক স্টেটমেন্ট কীভাবে ক্যালকুলেট করতে হয় (আমাদের ওয়েবসাইটে ফ্রি ব্যাংক ক্যালকুলেটরও আছে) এবং ইউনিভার্সিটির Pre-CAS ও অ্যাম্বাসি ইন্টারভিউতে কী কী প্রশ্ন করা হয়, তার জন্য আমরা ওয়ান-টু-ওয়ান স্পেশাল মক ইন্টারভিউ প্রস্তুতি করাই।',
+    q: 'Do you provide guidance for the 28-day bank statement and visa interview?',
+    a: 'Yes. We provide complete step-by-step guidance on calculating the mandatory UKVI 28-day financial proof (including our free live bank statement calculator) and conduct one-on-one mock interview sessions to prepare you for university Pre-CAS and UKVI visa credibility checks.',
   },
 ]
 
@@ -250,7 +250,7 @@ export default function KhulnaPage() {
         <div className="max-w-6xl mx-auto relative z-10 text-center">
           <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold text-emerald-300 mb-6 backdrop-blur-md">
             <MapPin className="w-4 h-4 text-emerald-400" />
-            খুলনার শিক্ষার্থীদের জন্য বিশ্বমানের ইউকে উচ্চশিক্ষা কনসালটেন্সি
+            World-Class UK Higher Education Consultancy for Khulna Students
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight sm:leading-tight mb-6">
@@ -261,7 +261,7 @@ export default function KhulnaPage() {
           </h1>
 
           <p className="text-base sm:text-lg lg:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed mb-8">
-            <strong>NUBTK</strong>, <strong>North Western University (NWU)</strong>, খুলনা বিশ্ববিদ্যালয় (KU), কুয়েট (KUET) ও বি এল কলেজসহ খুলনার সকল শিক্ষার্থীদের জন্য <strong>লন্ডন হেড অফিস</strong> পরিচালিত <strong>১০০% ফ্রি</strong> অ্যাডমিশন, আপ টু £10,000 স্কলারশিপ, IELTS ছাড়া MOI সুবিধা ও লন্ডনে পৌঁছানোর পর ১০০% পার্ট-টাইম জব নিশ্চয়তা।
+            Dedicated admissions desk for <strong>NUBTK</strong>, <strong>North Western University (NWU)</strong>, <strong>Khulna University (KU)</strong>, <strong>KUET</strong>, and <strong>BL College</strong> students. Direct <strong>London Head Office</strong> guidance, <strong>100% free</strong> file processing, up to £10,000 scholarships, IELTS waivers via MOI, and guaranteed part-time job support upon UK arrival.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -269,7 +269,7 @@ export default function KhulnaPage() {
               href="#consultation"
               className="bg-emerald-500 hover:bg-emerald-600 text-white font-black text-sm sm:text-base px-8 py-4 rounded-xl shadow-lg transition-transform hover:scale-105"
             >
-              বিনামূল্যে ফাইল অ্যাসেসমেন্ট বুক করুন
+              Book Free Profile Assessment
             </Link>
             <a
               href="https://wa.me/447776181483?text=Hello%2C%20I%20am%20a%20student%20from%20Khulna%20interested%20in%20UK%20study%20options."
@@ -278,17 +278,17 @@ export default function KhulnaPage() {
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm sm:text-base px-6 py-4 rounded-xl backdrop-blur-md transition"
             >
               <MessageCircle className="w-5 h-5 text-emerald-400" />
-              খুলনা হেল্পডেস্ক WhatsApp
+              Khulna Helpdesk WhatsApp
             </a>
           </div>
 
           {/* Quick Metrics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto text-left">
             {[
-              { label: 'Agency Service Fee', value: '£0 / ফ্রি', desc: 'কোনো গোপন বা ফাইল চার্জ নেই' },
-              { label: 'Partner Universities', value: '50+ UK', desc: 'শীর্ষস্থানীয় ব্রিটিশ বিশ্ববিদ্যালয়' },
-              { label: 'Scholarship Amount', value: 'Up to £10k', desc: 'মেধার ভিত্তিতে স্কলারশিপ' },
-              { label: 'London Job Support', value: '100% Guaranteed', desc: 'লন্ডন অফিসে জব সহায়তা' },
+              { label: 'Agency Service Fee', value: '£0 / Free', desc: 'No hidden or file opening charges' },
+              { label: 'Partner Universities', value: '50+ UK', desc: 'Top-ranked British institutions' },
+              { label: 'Scholarship Amount', value: 'Up to £10k', desc: 'Merit and regional fee discounts' },
+              { label: 'London Job Support', value: '100% Guaranteed', desc: 'On-ground assistance at London office' },
             ].map((stat, idx) => (
               <div
                 key={idx}
@@ -310,10 +310,10 @@ export default function KhulnaPage() {
             The #1 Trusted Choice in Khulna
           </p>
           <h2 className="text-2xl sm:text-4xl font-black text-[#06241B]">
-            খুলনার শিক্ষার্থীরা কেন সেজ রুটস ইন্টারন্যাশনাল বেছে নেয়?
+            Why Khulna Students Choose Sage Roots International
           </h2>
           <p className="text-gray-600 text-sm sm:text-base mt-3">
-            সাধারণ দালালি ও লোকাল এজেন্সির প্রতারণা এড়িয়ে সরাসরি যুক্তরাজ্যের রেজিস্টার্ড হেড অফিসের মাধ্যমে সম্পূর্ণ নিরাপদে আবেদন করুন।
+            Avoid third-party broker fees and local agency risks by applying directly through our registered London Head Office.
           </p>
         </div>
 
@@ -344,7 +344,7 @@ export default function KhulnaPage() {
               Dedicated Support Across Khulna Division
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-[#06241B]">
-              খুলনার সকল শীর্ষ শিক্ষা প্রতিষ্ঠানের শিক্ষার্থীদের জন্য উন্মুক্ত
+              Open for Students Across Leading Educational Institutions in Khulna
             </h2>
           </div>
 
@@ -361,7 +361,7 @@ export default function KhulnaPage() {
           </div>
 
           <div className="mt-8 text-center text-xs sm:text-sm text-gray-500">
-            এছাড়াও যশোর, সাতক্ষীরা, বাগেরহাট ও সমগ্র খুলনা বিভাগের শিক্ষার্থীরা সরাসরি আমাদের সার্ভিস পাচ্ছেন।
+            Also welcoming students from Jashore, Satkhira, Bagerhat, and the wider Khulna Division.
           </div>
         </div>
       </section>
@@ -377,28 +377,28 @@ export default function KhulnaPage() {
                   NUBTK &amp; NWU Khulna Dedicated Fast-Track Desk
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-black leading-snug mb-3">
-                  NUBTK ও North Western University-এর শিক্ষার্থীদের জন্য বিশেষ সুযোগ
+                  Special Study Abroad Opportunity for NUBTK &amp; North Western University
                 </h3>
                 <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
-                  নর্দার্ন ইউনিভার্সিটি (NUBTK) এবং নর্থ ওয়েস্টার্ন ইউনিভার্সিটি (NWU) থেকে BBA, CSE, EEE, LLB, ও English সম্পন্ন করা শিক্ষার্থীরা কোনো <strong>IELTS ছাড়াই শুধুমাত্র Medium of Instruction (MOI)</strong> লেটার দিয়ে যুক্তরাজ্যের নামকরা বিশ্ববিদ্যালয়ে সরাসরি Master’s ও MBA-তে ভর্তি হতে পারছেন।
+                  Graduates of Northern University (NUBTK) and North Western University (NWU) in BBA, CSE, EEE, LLB, and English can secure direct Master’s &amp; MBA admission at prestigious UK universities using an <strong>English Medium of Instruction (MOI) letter with zero IELTS requirement</strong>.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                   <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span><strong>IELTS Waiver:</strong> ১০০% MOI সার্টিফিকেট গ্রহণযোগ্য</span>
+                    <span><strong>IELTS Waiver:</strong> 100% MOI Certificate Accepted</span>
                   </div>
                   <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span><strong>Low CAS Deposit:</strong> সর্বনিম্ন £3,000 থেকে ডিপোজিট</span>
+                    <span><strong>Low CAS Deposit:</strong> Minimum Deposit Starting from £3,000</span>
                   </div>
                   <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span><strong>Study Gap:</strong> ৫ থেকে ৭ বছর পর্যন্ত স্টাডি গ্যাপ গ্রহণযোগ্য</span>
+                    <span><strong>Study Gap:</strong> Up to 5 to 7 Years Study Gap Accepted</span>
                   </div>
                   <div className="flex items-center gap-2 bg-black/20 rounded-xl p-3 border border-white/10">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span><strong>London Job Guarantee:</strong> পৌঁছানোর পর পার্ট-টাইম কাজ নিশ্চিত</span>
+                    <span><strong>London Job Guarantee:</strong> Part-Time Employment Support on Arrival</span>
                   </div>
                 </div>
               </div>
@@ -411,7 +411,7 @@ export default function KhulnaPage() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-[#073224] font-black text-sm px-6 py-4 rounded-xl shadow-lg transition"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  NUBTK &amp; NWU WhatsApp হেল্পডেস্ক
+                  NUBTK &amp; NWU WhatsApp Helpdesk
                 </a>
               </div>
             </div>
@@ -426,7 +426,7 @@ export default function KhulnaPage() {
             Top University Admissions
           </p>
           <h2 className="text-2xl sm:text-4xl font-black text-[#06241B]">
-            খুলনার শিক্ষার্থীদের জন্য জনপ্রিয় কোর্স ও বিশ্ববিদ্যালয়সমূহ
+            Popular Study Pathways &amp; Universities for Khulna Students
           </h2>
         </div>
 
@@ -447,7 +447,7 @@ export default function KhulnaPage() {
                 href={item.href}
                 className="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 hover:text-emerald-800 transition"
               >
-                বিস্তারিত দেখুন <ArrowRight className="w-4 h-4" />
+                View Details <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           ))}
@@ -463,10 +463,10 @@ export default function KhulnaPage() {
               Exclusive Student Welfare Program
             </div>
             <h2 className="text-2xl sm:text-3xl font-black mb-3">
-              ইউকে পৌঁছানোর পর লন্ডনে পার্ট-টাইম জব সাপোর্ট
+              On-Ground Part-Time Job Support Upon Arrival in London
             </h2>
             <p className="text-white/80 text-sm sm:text-base leading-relaxed max-w-2xl">
-              অনেকেই বিদেশে গিয়ে কাজ না পেয়ে দিশেহারা হয়ে পড়ে। আমাদের স্ট্র্যাটফোর্ড অফিস খুলনার প্রত্যেক শিক্ষার্থীকে ইউকে পৌঁছানোর পরপরই ন্যাশনাল ইন্স্যুরেন্স (NIN), সিভি অপটিমাইজেশন ও বিশ্বস্ত পার্ট-টাইম কর্মসংস্থানের ব্যবস্থা করে দেয়।
+              Moving abroad without local connections can be challenging. Our Stratford, London headquarters ensures every arriving student receives prompt assistance with National Insurance Numbers (NIN), CV optimization, and trusted part-time employment placement.
             </p>
           </div>
           <a
@@ -475,7 +475,7 @@ export default function KhulnaPage() {
             rel="noopener noreferrer"
             className="bg-white text-[#073224] hover:bg-emerald-50 font-black text-sm sm:text-base px-8 py-4 rounded-xl shadow-lg whitespace-nowrap transition"
           >
-            লন্ডন টিমের সাথে কথা বলুন
+            Speak with London Team
           </a>
         </div>
       </section>
@@ -485,7 +485,7 @@ export default function KhulnaPage() {
         <div className="text-center mb-12">
           <p className="text-emerald-700 font-bold text-xs uppercase tracking-widest mb-1">Got Questions?</p>
           <h2 className="text-2xl sm:text-3xl font-black text-[#06241B]">
-            খুলনার শিক্ষার্থীদের সাধারণ প্রশ্নোত্তর (FAQs)
+            Frequently Asked Questions for Khulna Students (FAQs)
           </h2>
         </div>
 
@@ -512,10 +512,10 @@ export default function KhulnaPage() {
             Fast Track Application
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-[#06241B]">
-            খুলনা থেকে ফ্রি ফাইল প্রসেসিং শুরু করুন
+            Start Your Free Application from Khulna
           </h2>
           <p className="text-gray-500 text-xs sm:text-sm mt-1">
-            নিচের ফর্মে আপনার তথ্য দিন — আমাদের এক্সপার্ট টিম ২৪ ঘণ্টার মধ্যে সরাসরি হোয়াটসঅ্যাপে যোগাযোগ করবে।
+            Fill in your details below — our expert UK team will reach out directly on WhatsApp within 24 hours.
           </p>
         </div>
         <ConsultationForm />

@@ -7,7 +7,7 @@ const quickLinks = [
   { label: 'UK Universities (50+)', href: '/universities' },
   { label: 'Study Destinations (10)', href: '/destinations' },
   { label: 'Daily Facebook Posts', href: '/posts' },
-  { label: 'Khulna Desk (খুলনা শাখা)', href: '/khulna' },
+  { label: 'Khulna Regional Desk', href: '/khulna' },
   { label: 'Our Services', href: '/services' },
   { label: 'Foundation Courses', href: '/foundation' },
   { label: 'Scholarships (£ GBP)', href: '/scholarships' },
@@ -30,7 +30,7 @@ const destinations = [
 
 const seoPathways = [
   {
-    label: 'Best UK Student Consultancy in Khulna (খুলনা স্টুডেন্ট সাপোর্ট)',
+    label: 'Best UK Student Consultancy in Khulna',
     href: '/khulna',
   },
   {
@@ -238,7 +238,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-[11px] text-white/35 mt-5 leading-relaxed">
-            Sage Roots International (সেজ রুটস ইন্টারন্যাশনাল লন্ডন) — খুলনা, ঢাকা ও সমগ্র বাংলাদেশের শিক্ষার্থীদের যুক্তরাজ্যে উচ্চশিক্ষা, IELTS বা MOI দিয়ে UK, Cyprus, Malta ও Dubai-এর শীর্ষ ইউনিভার্সিটিতে ভর্তি, আপ টু £10,000 স্কলারশিপ, 2nd Master’s after PSW, এবং লন্ডনে ১০০% পার্ট-টাইম জব ও ক্যারিয়ার গাইডলাইন।
+            Sage Roots International (London) — Dedicated higher education consultancy for students across Bangladesh, offering direct admission to top universities across the UK, Cyprus, Malta, and Dubai with IELTS or MOI, up to £10,000 scholarships, 2nd Master’s after PSW, and London student career guidance.
           </p>
         </div>
       </div>

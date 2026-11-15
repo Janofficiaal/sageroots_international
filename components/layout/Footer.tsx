@@ -75,6 +75,22 @@ const seoPathways = [
     href: '/posts/uk-student-part-time-job-support-stratford-london-office',
   },
   {
+    label: 'UK Universities with Low CAS Deposit (£3k–£5k)',
+    href: '/uk-universities-with-low-cas-deposit-tuition-fees',
+  },
+  {
+    label: 'Study in UK with Study Gap (5 to 10+ Years Accepted)',
+    href: '/study-in-uk-with-study-gap-accepted-universities',
+  },
+  {
+    label: 'Second Master’s in UK After PSW (Switch Onshore)',
+    href: '/second-masters-in-uk-after-psw',
+  },
+  {
+    label: 'UK January 2027 Intake Universities & Deadlines',
+    href: '/uk-january-2027-intake-universities-deadlines',
+  },
+  {
     label: 'Instant University & MOI Eligibility Checker',
     href: '/eligibility-checker',
   },

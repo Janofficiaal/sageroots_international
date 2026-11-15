@@ -38,6 +38,10 @@ const navItems = [
     href: '/eligibility-checker',
     children: [
       { label: 'MOI & Eligibility Checker', href: '/eligibility-checker' },
+      { label: 'UK January 2027 Intake & Deadlines', href: '/uk-january-2027-intake-universities-deadlines' },
+      { label: 'Low CAS Deposit (£3k–£5k) Universities', href: '/uk-universities-with-low-cas-deposit-tuition-fees' },
+      { label: 'Study in UK with Study Gap Guide', href: '/study-in-uk-with-study-gap-accepted-universities' },
+      { label: 'Second Master’s After PSW (Onshore)', href: '/second-masters-in-uk-after-psw' },
       { label: 'Study in UK Without IELTS (MOI)', href: '/study-in-uk-without-ielts-moi-accepted-universities' },
       { label: 'UKVI 28-Day Bank Statement Guide', href: '/uk-student-visa-bank-statement-guide-28-day-rule' },
       { label: 'Dhaka Student Desk', href: '/dhaka' },

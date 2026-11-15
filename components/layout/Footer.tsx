@@ -31,7 +31,7 @@ const destinations = [
 const seoPathways = [
   {
     label: 'Best Study Abroad Consultancy in the World for UK Admissions',
-    href: '/about',
+    href: '/best-study-abroad-consultancy-in-the-world',
   },
   {
     label: 'Best UK Student Consultancy in Khulna',

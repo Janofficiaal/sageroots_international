@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/eligibility-checker',
     '/khulna',
     '/study-abroad-consultancy-in-khulna',
+    '/best-study-abroad-consultancy-in-the-world',
     '/contact',
     '/privacy-policy',
     '/terms',

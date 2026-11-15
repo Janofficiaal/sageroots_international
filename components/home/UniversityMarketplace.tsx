@@ -7,7 +7,7 @@ import { universities } from '@/data/universities'
 import UniversityCard from '@/components/ui/UniversityCard'
 
 const ALL_LEVELS = ['Undergraduate', 'Postgraduate', 'Foundation', 'PhD']
-const ALL_INTAKES = ['September 2025', 'January 2026', 'May 2026', 'September 2026']
+const ALL_INTAKES = ['January 2027', 'April/May 2027', 'September 2027']
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
 function getUniversityLetters(name: string): string[] {

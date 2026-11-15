@@ -16,7 +16,7 @@ export default function AnnouncementBar() {
         className="inline-flex items-center gap-1.5 hover:text-brand-magenta transition-colors"
       >
         <span>
-          <strong className="font-bold text-white">UK Intake 2026/2027</strong> — Applications Now Open for International Students
+          <strong className="font-bold text-white">UK Intake 2027 (January, April/May &amp; September)</strong> — Fast-Track Admissions &amp; Scholarships Now Open
         </span>
         <span className="hidden sm:inline text-emerald-400 font-semibold ml-1.5 underline underline-offset-2">
           Learn More

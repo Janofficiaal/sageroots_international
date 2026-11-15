@@ -43,10 +43,9 @@ export const universities: University[] = [
       "Civil Engineering"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £16,500 per year.",
     "scholarshipNote": "International Merit Scholarship up to £3,000 per year.",
@@ -79,10 +78,9 @@ export const universities: University[] = [
       "Psychology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £18,800 per year.",
     "scholarshipNote": "International Accommodation & Merit Award up to £2,000 - £4,000.",
@@ -115,10 +113,9 @@ export const universities: University[] = [
       "Optometry"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £17,200 per year.",
     "scholarshipNote": "International Early Payment Discount and Merit Scholarships up to £4,000.",
@@ -151,10 +148,9 @@ export const universities: University[] = [
       "Interior Design"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,950 - £19,950 per year.",
     "scholarshipNote": "Vice-Chancellor International Scholarship up to £3,000.",
@@ -187,10 +183,9 @@ export const universities: University[] = [
       "Interior Design"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,000 per year.",
     "scholarshipNote": "International Creative Talent Scholarship up to £2,500.",
@@ -223,10 +218,9 @@ export const universities: University[] = [
       "Finance"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £21,500 per year.",
     "scholarshipNote": "Aston Global Advantage & Merit Scholarships up to £5,000.",
@@ -260,9 +254,9 @@ export const universities: University[] = [
       "Computer Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,000 - £18,500 per year.",
     "scholarshipNote": "Vice-Chancellor's Scholarship up to £5,000 for exceptional international students.",
@@ -295,10 +289,9 @@ export const universities: University[] = [
       "Marketing"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,500 per year.",
     "scholarshipNote": "International Excellence Scholarship up to £3,000.",
@@ -331,10 +324,9 @@ export const universities: University[] = [
       "International Relations"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £20,500 per year.",
     "scholarshipNote": "Global Future & South Asia Scholarships up to £4,000.",
@@ -367,10 +359,9 @@ export const universities: University[] = [
       "Media & Design"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,000 - £17,700 per year.",
     "scholarshipNote": "Automatic International Merit Discount up to £2,000 - £3,000.",
@@ -403,10 +394,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,000 per year.",
     "scholarshipNote": "International Bursary up to £2,500 off first-year tuition.",
@@ -439,10 +429,9 @@ export const universities: University[] = [
       "English Literature"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,250 - £15,500 per year.",
     "scholarshipNote": "International Welcome Scholarship up to £2,000.",
@@ -475,10 +464,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £18,800 per year.",
     "scholarshipNote": "Academic Excellence Scholarship up to £3,500.",
@@ -509,11 +497,9 @@ export const universities: University[] = [
       "Management"
     ],
     "intakes": [
-      "January 2025",
-      "May 2025",
-      "September 2025",
-      "January 2026",
-      "May 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,000 - £16,500 per year.",
     "scholarshipNote": "Dean of BPP School of Business / Law Scholarships available for outstanding students.",
@@ -547,10 +533,9 @@ export const universities: University[] = [
       "Public Health"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,400 - £23,600 per year.",
     "scholarshipNote": "Brunel International Excellence Scholarship offering £6,000 fee reduction.",
@@ -583,10 +568,9 @@ export const universities: University[] = [
       "Supply Chain"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £16,800 per year.",
     "scholarshipNote": "Vice-Chancellor International Student Scholarship up to £3,000.",
@@ -619,10 +603,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £16,800 per year.",
     "scholarshipNote": "International Student Bursary up to £2,500.",
@@ -655,10 +638,9 @@ export const universities: University[] = [
       "Food Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,000 per year.",
     "scholarshipNote": "Global Academics Scholarship up to £2,500 - £3,500.",
@@ -692,9 +674,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£19,500 - £27,000 per year.",
     "scholarshipNote": "Vice-Chancellor's International Scholarships up to £5,000.",
@@ -727,10 +709,9 @@ export const universities: University[] = [
       "Health Sciences"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,500 - £25,500 per year.",
     "scholarshipNote": "Bayes & City International Merit Scholarships up to £5,000.",
@@ -763,10 +744,9 @@ export const universities: University[] = [
       "Media & Communication"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,000 - £19,800 per year.",
     "scholarshipNote": "International Pathways Scholarship of up to £3,000.",
@@ -799,10 +779,9 @@ export const universities: University[] = [
       "Automotive Engineering"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,500 - £28,000 per year.",
     "scholarshipNote": "Cranfield Merit & Regional Scholarships up to £5,000 - £8,000.",
@@ -835,9 +814,9 @@ export const universities: University[] = [
       "Fashion & Footwear"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,250 - £16,750 per year.",
     "scholarshipNote": "DMU International Scholarship of £1,500 for postgraduate candidates.",
@@ -870,10 +849,9 @@ export const universities: University[] = [
       "Politics & International Relations"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£23,500 - £31,000 per year.",
     "scholarshipNote": "Inspiring Excellence Scholarships up to £5,000 - £10,000.",
@@ -906,10 +884,9 @@ export const universities: University[] = [
       "Architecture"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,500 per year.",
     "scholarshipNote": "International scholarship discounts of £1,000 - £2,500 available for early tuition deposits.",
@@ -942,10 +919,9 @@ export const universities: University[] = [
       "Biosciences"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £16,800 per year.",
     "scholarshipNote": "Automatic International Tuition Fee Discount up to £3,000.",
@@ -978,10 +954,9 @@ export const universities: University[] = [
       "Accounting & Finance"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,200 - £18,500 per year.",
     "scholarshipNote": "South Asia Merit Scholarship up to £3,000.",
@@ -1014,10 +989,9 @@ export const universities: University[] = [
       "Creative Advertising"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,950 - £19,500 per year.",
     "scholarshipNote": "International Creative Talent Award up to £3,000.",
@@ -1050,10 +1024,9 @@ export const universities: University[] = [
       "Electrical Engineering"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,200 - £17,500 per year.",
     "scholarshipNote": "New to GCU International Scholarship up to £2,500 - £4,000.",
@@ -1086,10 +1059,9 @@ export const universities: University[] = [
       "Sociology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,500 - £22,500 per year.",
     "scholarshipNote": "Goldsmiths International Response Scholarship up to £4,000.",
@@ -1122,10 +1094,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,500 per year.",
     "scholarshipNote": "International Agri-Tech Scholarship up to £3,000.",
@@ -1158,10 +1129,9 @@ export const universities: University[] = [
       "Biological Sciences"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £16,500 per year.",
     "scholarshipNote": "International Academic Vice-Chancellor Bursary up to £2,500.",
@@ -1194,10 +1164,9 @@ export const universities: University[] = [
       "Business Analytics"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,500 - £22,500 per year.",
     "scholarshipNote": "International Merit Award up to £4,000.",
@@ -1230,8 +1199,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£35,000 - £42,000 per year for STEM & Business programmes.",
     "scholarshipNote": "President's Undergraduate Scholarships, World Scientific Fellowships, and Imperial Bursaries.",
@@ -1264,10 +1234,9 @@ export const universities: University[] = [
       "Psychology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £20,200 per year.",
     "scholarshipNote": "Keele Developing Countries & Global Scholarship up to £5,000.",
@@ -1301,9 +1270,9 @@ export const universities: University[] = [
       "Psychiatry"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£23,500 - £35,000 per year.",
     "scholarshipNote": "King's International Scholarships, Desmond Tutu Scholarships, and departmental merit awards.",
@@ -1336,10 +1305,9 @@ export const universities: University[] = [
       "Marketing"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,800 - £19,200 per year.",
     "scholarshipNote": "Kingston International Scholarship up to £4,000.",
@@ -1372,10 +1340,9 @@ export const universities: University[] = [
       "Linguistics"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£22,000 - £28,500 per year.",
     "scholarshipNote": "Lancaster Global Scholarship up to £5,000.",
@@ -1408,10 +1375,9 @@ export const universities: University[] = [
       "Filmmaking"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £18,000 per year.",
     "scholarshipNote": "International Creative Progression Award up to £2,500.",
@@ -1444,10 +1410,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,000 - £17,500 per year.",
     "scholarshipNote": "International Dean's Scholarship up to £3,000 - £4,000.",
@@ -1480,10 +1445,9 @@ export const universities: University[] = [
       "Supply Chain Management"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,000 per year.",
     "scholarshipNote": "International Bursary up to £2,500.",
@@ -1516,10 +1480,9 @@ export const universities: University[] = [
       "International Relations"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,000 per year.",
     "scholarshipNote": "Vice-Chancellor International Scholarship up to £3,000.",
@@ -1552,10 +1515,9 @@ export const universities: University[] = [
       "Sport Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,600 - £18,250 per year.",
     "scholarshipNote": "Automatic International Achievement Scholarship up to £3,500.",
@@ -1588,9 +1550,9 @@ export const universities: University[] = [
       "Criminology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,800 per year.",
     "scholarshipNote": "International Excellence Scholarship and fee discounts of up to £2,500.",
@@ -1623,8 +1585,9 @@ export const universities: University[] = [
       "Social Policy"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£26,184 - £34,000 per year.",
     "scholarshipNote": "LSE Undergraduate Support Scheme and LSE Master's Awards covering partial/full fees.",
@@ -1657,10 +1620,9 @@ export const universities: University[] = [
       "Health & Social Care"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,800 - £17,900 per year.",
     "scholarshipNote": "LSBU Global Success & Merit Scholarship up to £3,000.",
@@ -1693,10 +1655,9 @@ export const universities: University[] = [
       "Media & Creative Industries"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,500 - £27,500 per year.",
     "scholarshipNote": "Loughborough Excellence Scholarship up to 20% off tuition.",
@@ -1729,10 +1690,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,500 - £20,500 per year.",
     "scholarshipNote": "International Postgraduate & Undergraduate Scholarship up to £3,500.",
@@ -1765,9 +1725,9 @@ export const universities: University[] = [
       "Creative Arts"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,300 - £17,500 per year.",
     "scholarshipNote": "Middlesex International Merit Awards from £1,000 up to £2,000.",
@@ -1801,9 +1761,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,400 - £27,600 per year.",
     "scholarshipNote": "Vice-Chancellor's Global Scholarships and International Foundation awards.",
@@ -1836,10 +1796,9 @@ export const universities: University[] = [
       "Nursing"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £19,500 per year.",
     "scholarshipNote": "Global Scholarship offering £2,000 to £3,000 fee reduction.",
@@ -1872,10 +1831,9 @@ export const universities: University[] = [
       "Fine Art"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,500 - £19,000 per year.",
     "scholarshipNote": "International Merit Scholarship up to £3,000.",
@@ -1908,10 +1866,9 @@ export const universities: University[] = [
       "Civil Engineering"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,800 - £19,800 per year.",
     "scholarshipNote": "NTU International Excellence Scholarships up to 50% tuition.",
@@ -1944,10 +1901,9 @@ export const universities: University[] = [
       "Journalism"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,000 - £15,500 per year.",
     "scholarshipNote": "International Welcome Bursary up to £2,000.",
@@ -1980,10 +1936,9 @@ export const universities: University[] = [
       "Arts Management"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £16,800 per year.",
     "scholarshipNote": "International Santander & QMU Bursary up to £3,000.",
@@ -2016,9 +1971,9 @@ export const universities: University[] = [
       "Artificial Intelligence"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£22,000 - £29,750 per year.",
     "scholarshipNote": "Queen Mary Global Excellence Scholarships worth up to £3,000 - £5,000.",
@@ -2052,9 +2007,9 @@ export const universities: University[] = [
       "Computer Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,800 - £25,000 per year.",
     "scholarshipNote": "International Office Undergraduate & Postgraduate Scholarships of £2,000 to £5,000.",
@@ -2087,10 +2042,9 @@ export const universities: University[] = [
       "MBA Fashion & Luxury"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £18,000 per year.",
     "scholarshipNote": "International Creative & Tech Scholarship up to £3,500.",
@@ -2123,10 +2077,9 @@ export const universities: University[] = [
       "Psychology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,000 - £25,500 per year.",
     "scholarshipNote": "Dean's International Enterprise Scholarship up to £4,000.",
@@ -2159,10 +2112,9 @@ export const universities: University[] = [
       "MBA"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £18,000 per year.",
     "scholarshipNote": "Dual UK & US Degree Merit Scholarship up to £3,000.",
@@ -2195,10 +2147,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £18,300 per year.",
     "scholarshipNote": "RGU International Student Discount up to £3,000.",
@@ -2231,10 +2182,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,750 - £17,500 per year.",
     "scholarshipNote": "Vice-Chancellor International Scholarship up to £4,000.",
@@ -2267,10 +2217,9 @@ export const universities: University[] = [
       "Equine Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,500 per year.",
     "scholarshipNote": "International Food & Agribusiness Bursary up to £3,000.",
@@ -2303,10 +2252,9 @@ export const universities: University[] = [
       "Media Arts"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£19,500 - £26,500 per year.",
     "scholarshipNote": "Royal Holloway Global Future Scholarship up to £5,000.",
@@ -2339,9 +2287,9 @@ export const universities: University[] = [
       "Sport Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,860 - £17,200 per year.",
     "scholarshipNote": "Transform Together Scholarships offering 50% tuition fee reduction.",
@@ -2374,10 +2322,9 @@ export const universities: University[] = [
       "Anthropology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,000 - £25,500 per year.",
     "scholarshipNote": "SOAS International Postgraduate Merit Award up to £5,000.",
@@ -2410,10 +2357,9 @@ export const universities: University[] = [
       "Sports Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,200 per year.",
     "scholarshipNote": "International Academic Merit Scholarship up to £2,500.",
@@ -2446,10 +2392,9 @@ export const universities: University[] = [
       "Healthcare Practice"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,500 - £26,000 per year.",
     "scholarshipNote": "Postgraduate Global Health Scholarship up to £3,500.",
@@ -2482,10 +2427,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,100 per year.",
     "scholarshipNote": "International Academic Excellence Scholarship up to £3,000.",
@@ -2518,10 +2462,9 @@ export const universities: University[] = [
       "Mechanical Engineering"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,750 - £17,500 per year.",
     "scholarshipNote": "SMART International Scholarship up to £3,000 - £3,500.",
@@ -2555,9 +2498,9 @@ export const universities: University[] = [
       "Sports Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£17,000 - £22,500 per year.",
     "scholarshipNote": "International Excellence Scholarships up to £4,000 for undergraduate and postgraduate.",
@@ -2590,9 +2533,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £17,000 per year.",
     "scholarshipNote": "Global Excellence Scholarship up to £2,000 for international students.",
@@ -2626,8 +2569,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£24,000 - £35,000 per year across disciplines.",
     "scholarshipNote": "UCL Global Undergraduate Scholarship, UCL Graduate Research Scholarships.",
@@ -2660,10 +2604,9 @@ export const universities: University[] = [
       "Art"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,840 - £18,000 per year.",
     "scholarshipNote": "International Postgraduate Scholarship of £2,000 applied automatically.",
@@ -2696,10 +2639,9 @@ export const universities: University[] = [
       "Culinary Arts"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £16,500 per year.",
     "scholarshipNote": "International Dean's Award & Early Payment Discount up to £2,500.",
@@ -2732,10 +2674,9 @@ export const universities: University[] = [
       "Human-Computer Interaction"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,950 - £18,500 per year.",
     "scholarshipNote": "UCA Creative International Scholarship up to £3,000 - £4,500.",
@@ -2769,9 +2710,9 @@ export const universities: University[] = [
       "Environmental Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£19,000 - £26,500 per year.",
     "scholarshipNote": "Aberdeen Global Scholarship up to £5,000 - £8,000 tuition fee waiver.",
@@ -2804,10 +2745,9 @@ export const universities: University[] = [
       "Economics"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£22,500 - £29,500 per year.",
     "scholarshipNote": "Bath Global Excellence & Deans Award up to £5,000 - £8,000.",
@@ -2840,12 +2780,9 @@ export const universities: University[] = [
       "Cyber Security"
     ],
     "intakes": [
-      "September 2025",
-      "November 2025",
-      "January 2026",
-      "March 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,000 per year.",
     "scholarshipNote": "Vice Chancellor's Scholarship and prompt payment discount up to £1,500.",
@@ -2879,9 +2816,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,000 - £29,800 per year.",
     "scholarshipNote": "Global Masters Scholarships and Birmingham International Academy awards.",
@@ -2914,10 +2851,9 @@ export const universities: University[] = [
       "Health & Social Care"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,950 - £15,950 per year.",
     "scholarshipNote": "International Excellence Bursary up to £2,500.",
@@ -2950,10 +2886,9 @@ export const universities: University[] = [
       "Cyber Security"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £21,000 per year.",
     "scholarshipNote": "Global Development & Regional Scholarship up to £4,000 - £5,000.",
@@ -2986,9 +2921,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,900 - £17,900 per year.",
     "scholarshipNote": "Brighton International Scholarship awarding £2,500 - £3,000 reduction.",
@@ -3022,8 +2957,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£22,200 - £31,500 per year.",
     "scholarshipNote": "Think Big Scholarships offering up to £13,000 - £26,000 tuition fee reductions.",
@@ -3056,10 +2992,9 @@ export const universities: University[] = [
       "Medicine & Health"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £22,000 per year.",
     "scholarshipNote": "2-Year Accelerated Honours Degree & High Achiever Scholarship up to £3,000.",
@@ -3092,10 +3027,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £17,500 per year.",
     "scholarshipNote": "International Bursary & Excellence Scholarship up to £3,500.",
@@ -3128,10 +3062,9 @@ export const universities: University[] = [
       "Accounting & Finance"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,750 - £16,000 per year.",
     "scholarshipNote": "International & Regional Merit Scholarship up to £2,500.",
@@ -3164,10 +3097,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £16,500 per year.",
     "scholarshipNote": "Global Merit Scholarship up to £2,500.",
@@ -3200,10 +3132,9 @@ export const universities: University[] = [
       "Environmental Conservation"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£13,500 - £15,500 per year.",
     "scholarshipNote": "International Tuition Fee Bursary up to £2,000.",
@@ -3236,10 +3167,9 @@ export const universities: University[] = [
       "Public Health"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,900 - £16,900 per year.",
     "scholarshipNote": "Vice-Chancellor & Merit Scholarships up to £3,000.",
@@ -3273,9 +3203,9 @@ export const universities: University[] = [
       "Business"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,500 - £24,000 per year.",
     "scholarshipNote": "Global Excellence Scholarship offering up to £6,000 per year of study.",
@@ -3308,10 +3238,9 @@ export const universities: University[] = [
       "Creative Writing"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£19,500 - £24,500 per year.",
     "scholarshipNote": "UEA International Excellence Scholarship up to £4,000 - £6,000.",
@@ -3344,8 +3273,9 @@ export const universities: University[] = [
       "Philosophy"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£24,500 - £34,800 per year.",
     "scholarshipNote": "Edinburgh Global Undergraduate Mathematics Scholarships and Edinburgh Doctoral College Scholarships.",
@@ -3378,10 +3308,9 @@ export const universities: University[] = [
       "Political Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,500 - £22,500 per year.",
     "scholarshipNote": "South Asia Regional Scholarship up to £4,000 - £5,000.",
@@ -3415,9 +3344,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,500 - £29,000 per year.",
     "scholarshipNote": "Global Excellence Scholarships of £5,000 to £10,000 for high achievers.",
@@ -3451,9 +3380,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,500 - £30,240 per year.",
     "scholarshipNote": "Undergraduate & Postgraduate Excellence Scholarships up to £10,000.",
@@ -3486,10 +3415,9 @@ export const universities: University[] = [
       "Nursing & Health"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,200 - £17,600 per year.",
     "scholarshipNote": "International Grant & Merit Award up to £3,000.",
@@ -3522,10 +3450,9 @@ export const universities: University[] = [
       "Accounting & Finance"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,100 - £18,000 per year.",
     "scholarshipNote": "International Scholarship Award offering up to £3,000 fee discount for year one.",
@@ -3558,10 +3485,9 @@ export const universities: University[] = [
       "Data Analytics"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £17,500 per year.",
     "scholarshipNote": "Vice-Chancellor's Scholarships of £1,000 to £4,000 for international students.",
@@ -3594,9 +3520,9 @@ export const universities: University[] = [
       "Architecture"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,000 - £18,700 per year.",
     "scholarshipNote": "Global Professional Scholarships awarding up to £4,000 annually.",
@@ -3629,10 +3555,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £18,500 per year.",
     "scholarshipNote": "Hull Fairer Future Global Scholarship up to £3,000.",
@@ -3665,10 +3590,9 @@ export const universities: University[] = [
       "Biotechnology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,600 - £22,700 per year.",
     "scholarshipNote": "Kent Future Student Global Scholarship up to £4,000 - £5,000.",
@@ -3701,10 +3625,9 @@ export const universities: University[] = [
       "Cyber Security Management"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £18,500 per year.",
     "scholarshipNote": "Career Changer & International Bursary up to £3,000.",
@@ -3738,9 +3661,9 @@ export const universities: University[] = [
       "Food Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,500 - £29,500 per year.",
     "scholarshipNote": "International Excellence Scholarships offering 50% tuition reduction across select faculties.",
@@ -3773,10 +3696,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£19,500 - £24,500 per year.",
     "scholarshipNote": "Citizens of Change International Scholarship up to £5,000.",
@@ -3809,10 +3731,9 @@ export const universities: University[] = [
       "Journalism"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £18,800 per year.",
     "scholarshipNote": "Lincoln Global Leaders Scholarship up to £4,000.",
@@ -3846,9 +3767,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,000 - £28,000 per year.",
     "scholarshipNote": "Vice-Chancellor's International Attainment Scholarship up to £5,000.",
@@ -3882,9 +3803,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£22,000 - £32,000 per year depending on lab or classroom based coursework.",
     "scholarshipNote": "Global Futures Scholarships up to £10,000 for outstanding international candidates.",
@@ -3917,10 +3838,9 @@ export const universities: University[] = [
       "Accounting & Finance"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,200 - £17,000 per year.",
     "scholarshipNote": "International Scholarship up to 30% off tuition fees.",
@@ -3953,9 +3873,9 @@ export const universities: University[] = [
       "Computer Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,500 - £28,000 per year.",
     "scholarshipNote": "Developing Solutions Scholarships providing 50% to 100% tuition waivers for eligible students.",
@@ -3988,10 +3908,9 @@ export const universities: University[] = [
       "Data Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,800 - £19,500 per year.",
     "scholarshipNote": "International Academic Excellence Scholarship up to £4,000.",
@@ -4024,9 +3943,9 @@ export const universities: University[] = [
       "Logistics"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,200 - £19,200 per year.",
     "scholarshipNote": "Vice-Chancellor's Global Development Scholarship of £1,600 to £3,000.",
@@ -4059,10 +3978,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,500 - £27,500 per year.",
     "scholarshipNote": "Henley Business School & Reading Global Scholarship up to £5,000.",
@@ -4094,9 +4012,9 @@ export const universities: University[] = [
       "Biomedical Sciences"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,700 - £18,500 per year.",
     "scholarshipNote": "Salford International Excellence Award offering £3,000 - £5,000.",
@@ -4130,9 +4048,9 @@ export const universities: University[] = [
       "Biomedicine"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,000 - £28,500 per year.",
     "scholarshipNote": "International Undergraduate & Postgraduate Merit Scholarships of £2,500 to £10,000.",
@@ -4165,10 +4083,9 @@ export const universities: University[] = [
       "Supply Chain & Project Management"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,200 - £17,200 per year.",
     "scholarshipNote": "International Development Scholarship up to £2,500.",
@@ -4201,8 +4118,9 @@ export const universities: University[] = [
       "Health Sciences"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,300 - £28,500 per year.",
     "scholarshipNote": "Southampton Presidential International Scholarship and Faculty merit discounts.",
@@ -4235,10 +4153,9 @@ export const universities: University[] = [
       "Sustainable Development"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£24,500 - £30,500 per year.",
     "scholarshipNote": "St Andrews Global Merit & Wardlaw Scholarships.",
@@ -4271,10 +4188,9 @@ export const universities: University[] = [
       "Marketing"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£16,500 - £20,900 per year.",
     "scholarshipNote": "Postgraduate & Undergraduate International Merit Award up to £4,000.",
@@ -4307,9 +4223,9 @@ export const universities: University[] = [
       "Computer Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£18,000 - £25,500 per year.",
     "scholarshipNote": "Faculty Dean's International Excellence Award offering £3,000 - £7,000.",
@@ -4342,10 +4258,9 @@ export const universities: University[] = [
       "Regenerative Biomedicine"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,900 - £16,200 per year.",
     "scholarshipNote": "International Merit Scholarship up to £2,000 - £3,000.",
@@ -4378,12 +4293,9 @@ export const universities: University[] = [
       "Tourism & Hospitality"
     ],
     "intakes": [
-      "September 2025",
-      "November 2025",
-      "January 2026",
-      "April 2026",
-      "June 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,000 - £16,500 per year.",
     "scholarshipNote": "International Scholarship of £1,500 automatically awarded to eligible students.",
@@ -4416,10 +4328,9 @@ export const universities: University[] = [
       "Biosciences"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,500 - £26,500 per year.",
     "scholarshipNote": "International Excellence Award up to £5,000.",
@@ -4452,10 +4363,9 @@ export const universities: University[] = [
       "Quantum Technology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£20,500 - £25,500 per year.",
     "scholarshipNote": "Sussex Chancellor's International Scholarship up to £5,000.",
@@ -4488,10 +4398,9 @@ export const universities: University[] = [
       "Design Management"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£22,500 - £28,500 per year.",
     "scholarshipNote": "UAL International Postgraduate Scholarship up to £7,000.",
@@ -4524,10 +4433,9 @@ export const universities: University[] = [
       "Public Health"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,500 per year.",
     "scholarshipNote": "International Bursary up to £2,000.",
@@ -4560,10 +4468,9 @@ export const universities: University[] = [
       "Animation & Film"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,850 - £18,000 per year.",
     "scholarshipNote": "Chancellor & Millennium Scholarships up to £4,000.",
@@ -4596,10 +4503,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,250 per year.",
     "scholarshipNote": "UWS Global Scholarship up to £2,000 - £3,000.",
@@ -4632,10 +4538,9 @@ export const universities: University[] = [
       "Education"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£13,500 - £15,500 per year.",
     "scholarshipNote": "International Bursary up to £2,500.",
@@ -4669,8 +4574,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£24,800 - £33,000 per year.",
     "scholarshipNote": "Warwick Undergraduate Global Excellence Scholarship (£2,000 to full tuition discount).",
@@ -4702,10 +4608,9 @@ export const universities: University[] = [
       "Music & Media"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,750 - £16,250 per year.",
     "scholarshipNote": "International Ambassador Scholarships worth up to £5,000.",
@@ -4737,9 +4642,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,000 - £18,000 per year.",
     "scholarshipNote": "Westminster International Postgraduate Scholarships offering partial tuition fees.",
@@ -4772,10 +4677,9 @@ export const universities: University[] = [
       "Psychology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,500 - £16,900 per year.",
     "scholarshipNote": "International Student Merit Scholarship up to £2,500.",
@@ -4808,10 +4712,9 @@ export const universities: University[] = [
       "Supply Chain Management"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,950 - £16,500 per year.",
     "scholarshipNote": "Lord Paul Excellence Scholarship up to £2,000 - £3,000.",
@@ -4844,10 +4747,9 @@ export const universities: University[] = [
       "Psychology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£15,200 - £16,700 per year.",
     "scholarshipNote": "International Merit Scholarship up to £2,500 - £3,000.",
@@ -4881,9 +4783,9 @@ export const universities: University[] = [
       "Law"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£21,000 - £28,800 per year.",
     "scholarshipNote": "Be Exceptional Scholarships providing up to £7,500 fee discounts.",
@@ -4916,10 +4818,9 @@ export const universities: University[] = [
       "Creative Arts"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£12,500 - £15,000 per year.",
     "scholarshipNote": "Automatic International Bursary up to £2,000.",
@@ -4952,10 +4853,9 @@ export const universities: University[] = [
       "Sports Science"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,500 - £16,000 per year.",
     "scholarshipNote": "International Agriculture & Animal Science Bursary up to £2,500.",
@@ -4988,10 +4888,9 @@ export const universities: University[] = [
       "Psychology"
     ],
     "intakes": [
-      "September 2025",
-      "January 2026",
-      "May 2026",
-      "September 2026"
+      "January 2027",
+      "April/May 2027",
+      "September 2027"
     ],
     "tuitionFeeNote": "£14,000 - £16,500 per year.",
     "scholarshipNote": "International Tuition Fee Discount up to £2,500.",

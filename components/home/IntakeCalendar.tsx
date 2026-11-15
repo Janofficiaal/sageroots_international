@@ -20,135 +20,135 @@ interface IntakeDetail {
 
 const INTAKES: IntakeDetail[] = [
   {
-    id: 'september',
-    name: 'September / Autumn Intake',
-    badge: 'Primary UK Intake',
-    status: 'Applications Open Now',
-    courseAvailability: '100% of Undergraduate, Postgraduate, Foundation & Research Programmes',
+    id: 'january',
+    name: 'January 2027 Intake',
+    badge: 'Immediate Priority Intake',
+    status: 'Applications & Fast-Track CAS Open',
+    courseAvailability: 'Postgraduate Master’s, Foundation Pathways & Selected Bachelor’s Degrees',
     overview:
-      'September is the main academic intake across all British universities, offering the widest selection of degree programmes, maximum Vice-Chancellor merit scholarships, and campus accommodation.',
+      'The January 2027 intake is in peak enrollment right now. Ideal for students who have degree transcripts, IELTS/MOI certificates, or 28-day bank fund maturity ready for immediate offer letter and CAS issuance.',
     milestones: [
       {
-        phase: '01. Application & SOP Submission',
-        window: 'January – June',
-        action: 'Submit academic transcripts, passport, CV, and Statement of Purpose for priority offer letters.',
+        phase: '01. Fast-Track Application & Document Filing',
+        window: 'October – November 2026',
+        action: 'Submit complete academic transcripts, passport, and CV for 48-hour offer letter turnaround.',
       },
       {
-        phase: '02. Conditional / Unconditional Offer',
-        window: 'Within 5 – 15 Working Days',
-        action: 'Receive official university offer letter and automatic scholarship assessment.',
+        phase: '02. Condition Clearance & MOI Assessment',
+        window: 'November 2026',
+        action: 'Clear academic or English requirements via IELTS, PTE, or Medium of Instruction (MOI) verification.',
       },
       {
-        phase: '03. Pre-CAS Interview & Tuition Deposit',
-        window: 'May – July',
-        action: 'Complete 1-on-1 mock interview training, pass university Pre-CAS check, and transfer CAS deposit.',
+        phase: '03. Pre-CAS Interview & CAS Deposit',
+        window: 'November – December 2026',
+        action: 'Complete mock Pre-CAS interview preparation with our London desk and pay initial tuition deposit (£3,000–£5,000).',
       },
       {
         phase: '04. 28-Day Bank Statement & Visa Filing',
-        window: 'June – August',
-        action: 'Verify 28-day UKVI maintenance funds, receive CAS, pay IHS fee, and attend VFS biometrics.',
+        window: 'December 2026',
+        action: 'Submit online UK Student Visa application with 28-day matured bank statement and attend VFS biometrics.',
       },
       {
-        phase: '05. UK Arrival & Enrolment',
-        window: 'September',
-        action: 'Fly to the United Kingdom, complete campus enrolment, and attend International Welcome Week.',
+        phase: '05. UK Arrival & Classes Begin',
+        window: 'January 2027',
+        action: 'Arrive in the UK, complete campus registration, and begin full-time academic classes.',
+      },
+    ],
+    popularUniversities: [
+      { name: 'Ulster University (London & Birmingham)', slug: 'ulster-university' },
+      { name: 'BPP University (London)', slug: 'bpp-university' },
+      { name: 'Coventry University', slug: 'coventry-university' },
+      { name: 'University of Hertfordshire', slug: 'university-of-hertfordshire' },
+    ],
+  },
+  {
+    id: 'may',
+    name: 'April / May 2027 Intake',
+    badge: 'Spring Fast-Track Intake',
+    status: 'Early Applications Open',
+    courseAvailability: 'MSc Business Management, Computing, Cyber Security, Project Management & MBA',
+    overview:
+      'A focused spring fast-track intake offered by selected career-oriented UK universities, allowing students to begin their UK Master’s or Top-Up degree without waiting until autumn.',
+    milestones: [
+      {
+        phase: '01. Priority Application Submission',
+        window: 'December 2026 – February 2027',
+        action: 'Apply early to secure limited May 2027 seats in high-demand Business, Computing, and Healthcare courses.',
+      },
+      {
+        phase: '02. Priority Offer & Pre-CAS Interview',
+        window: 'January – March 2027',
+        action: 'Complete rapid condition clearance, scholarship matching, and pass university Pre-CAS interview.',
+      },
+      {
+        phase: '03. Tuition Deposit & Final CAS',
+        window: 'February – March 2027',
+        action: 'Transfer CAS deposit and obtain official Confirmation of Acceptance for Studies.',
+      },
+      {
+        phase: '04. UKVI Student Visa & Biometrics',
+        window: 'March – April 2027',
+        action: 'Complete VFS biometric appointment with verified 28-day bank statement.',
+      },
+      {
+        phase: '05. UK Arrival & Summer Semester Start',
+        window: 'April – May 2027',
+        action: 'Travel to the UK, attend International Welcome Week, and begin Spring/Summer semester.',
+      },
+    ],
+    popularUniversities: [
+      { name: 'Anglia Ruskin University', slug: 'anglia-ruskin-university' },
+      { name: 'University of Portsmouth', slug: 'university-of-portsmouth' },
+      { name: 'De Montfort University', slug: 'de-montfort-university' },
+      { name: 'University of Roehampton', slug: 'university-of-roehampton' },
+    ],
+  },
+  {
+    id: 'september',
+    name: 'September 2027 Intake',
+    badge: 'Major Autumn Intake',
+    status: 'Pre-Registration & Course Matching Open',
+    courseAvailability: '100% of All Undergraduate, Postgraduate, Foundation & PhD Degrees',
+    overview:
+      'September 2027 is the flagship academic intake across all British universities, offering the widest choice of 139+ institutions, maximum Vice-Chancellor merit scholarships (up to £10,000), and guaranteed university accommodation.',
+    milestones: [
+      {
+        phase: '01. Course Shortlisting & Early Applications',
+        window: 'January – May 2027',
+        action: 'Submit academic transcripts and Statement of Purpose (SOP) for maximum scholarship eligibility.',
+      },
+      {
+        phase: '02. Unconditional Offer Letters',
+        window: 'Within 5 – 15 Working Days',
+        action: 'Receive official university offer letters and automatic early-bird scholarship discounts.',
+      },
+      {
+        phase: '03. Pre-CAS Interview & CAS Deposit',
+        window: 'May – July 2027',
+        action: 'Complete 1-on-1 mock interview training with our London team and transfer tuition deposit.',
+      },
+      {
+        phase: '04. 28-Day Bank Statement & Visa Filing',
+        window: 'June – August 2027',
+        action: 'Verify 28-day UKVI maintenance funds, receive CAS, and attend VFS biometrics.',
+      },
+      {
+        phase: '05. UK Arrival & Autumn Enrolment',
+        window: 'September 2027',
+        action: 'Fly to the United Kingdom, complete campus enrolment, and start your degree journey.',
       },
     ],
     popularUniversities: [
       { name: 'The University of Manchester', slug: 'university-of-manchester' },
       { name: 'University of Greenwich', slug: 'university-of-greenwich' },
-      { name: 'University of Portsmouth', slug: 'university-of-portsmouth' },
+      { name: 'Abertay University', slug: 'abertay-university' },
       { name: "Queen's University Belfast", slug: 'queens-university-belfast' },
-    ],
-  },
-  {
-    id: 'january',
-    name: 'January / Winter Intake',
-    badge: 'Secondary Major Intake',
-    status: 'Applications Open Now',
-    courseAvailability: 'Postgraduate Master’s, Foundation Pathways & Selected Bachelor’s Degrees',
-    overview:
-      'Ideal for students who missed the September cycle or needed additional time to complete degree transcripts, IELTS/MOI certificates, or 28-day bank fund maturity.',
-    milestones: [
-      {
-        phase: '01. Application & Document Filing',
-        window: 'July – October',
-        action: 'Shortlist January-intake universities and submit complete application package.',
-      },
-      {
-        phase: '02. Offer Letter & Condition Clearance',
-        window: 'August – November',
-        action: 'Fulfil English proficiency (IELTS/PTE/MOI) and academic transcript conditions.',
-      },
-      {
-        phase: '03. Pre-CAS Credibility Interview & Deposit',
-        window: 'October – November',
-        action: 'Clear university Pre-CAS interview and pay initial tuition fee deposit via bank student file.',
-      },
-      {
-        phase: '04. CAS Issuance & UKVI Visa Submission',
-        window: 'November – December',
-        action: 'Submit online UK Student Visa application with 28-day matured bank statement and TB certificate.',
-      },
-      {
-        phase: '05. UK Arrival & Winter Term Start',
-        window: 'January',
-        action: 'Arrive in the UK and begin full-time academic classes.',
-      },
-    ],
-    popularUniversities: [
-      { name: 'Coventry University', slug: 'coventry-university' },
-      { name: 'University of Hertfordshire', slug: 'university-of-hertfordshire' },
-      { name: 'Ulster University', slug: 'ulster-university' },
-      { name: 'University of Roehampton', slug: 'university-of-roehampton' },
-    ],
-  },
-  {
-    id: 'may',
-    name: 'May / Spring Intake',
-    badge: 'Fast-Track Intake',
-    status: 'Limited Seats Available',
-    courseAvailability: 'Selected MSc Business, Management, Computing, IT & MBA Programmes',
-    overview:
-      'A focused fast-track intake offered by selected career-oriented UK universities, allowing students to begin their UK Master’s or Top-Up degree without waiting until September.',
-    milestones: [
-      {
-        phase: '01. Fast-Track Application Submission',
-        window: 'December – February',
-        action: 'Apply early to secure limited May-intake seats in Business, Computing, and Project Management.',
-      },
-      {
-        phase: '02. Priority Offer & Pre-CAS Interview',
-        window: 'January – March',
-        action: 'Complete rapid condition clearance and pass Pre-CAS interview.',
-      },
-      {
-        phase: '03. Tuition Deposit & Final CAS',
-        window: 'February – March',
-        action: 'Transfer CAS deposit and obtain Confirmation of Acceptance for Studies.',
-      },
-      {
-        phase: '04. UKVI Student Visa & Biometrics',
-        window: 'March – April',
-        action: 'Complete VFS biometric appointment with verified 28-day bank statement.',
-      },
-      {
-        phase: '05. UK Arrival & Summer Semester Start',
-        window: 'May',
-        action: 'Travel to the UK and commence Spring/Summer cohort studies.',
-      },
-    ],
-    popularUniversities: [
-      { name: 'Coventry University', slug: 'coventry-university' },
-      { name: 'University of East London', slug: 'university-of-east-london' },
-      { name: 'University of Bedfordshire', slug: 'university-of-bedfordshire' },
-      { name: 'Ulster University', slug: 'ulster-university' },
     ],
   },
 ]
 
 export default function IntakeCalendar() {
-  const [selectedId, setSelectedId] = useState<'september' | 'january' | 'may'>('september')
+  const [selectedId, setSelectedId] = useState<'september' | 'january' | 'may'>('january')
   const activeIntake = INTAKES.find((i) => i.id === selectedId) || INTAKES[0]
 
   return (

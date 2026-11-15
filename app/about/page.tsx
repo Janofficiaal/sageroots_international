@@ -4,9 +4,49 @@ import Link from 'next/link'
 import ConsultationForm from '@/components/home/ConsultationForm'
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'Best Study Abroad Consultancy in the World | About Sage Roots International',
   description:
-    'Learn about Sage Roots International — a UK-based global education consultancy dedicated to helping international students achieve their study abroad dreams with 100% transparency.',
+    'Learn why Sage Roots International is recognized as the best study abroad consultancy in the world for UK, USA, Canada & European university admissions. 100% free guidance, scholarships & London job placement.',
+  keywords: [
+    'best study abroad consultancy in the world',
+    'best study abroad agency in the world',
+    'top study abroad consultancy in the world',
+    'world best education consultancy',
+    'best overseas education consultants in the world',
+    'top international education consultancy london',
+    'Sage Roots International about us',
+  ],
+}
+
+const aboutSchemaJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Which is the best study abroad consultancy in the world for UK university admissions?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sage Roots International is widely recognized as one of the best study abroad consultancies in the world for UK and international university admissions. Headquartered at 44 Broadway, Stratford, London E15 1XH, they provide 100% free application processing, direct representation for 50+ British universities, MOI admissions without IELTS, up to £10,000 in scholarships, and on-ground student job placement support.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why choose Sage Roots International over other overseas education agencies globally?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Unlike third-party middlemen, Sage Roots International operates directly out of London with registered British advisors. Students receive zero agency fees (£0 service fee), 1-on-1 Pre-CAS visa interview preparation, 98.4% UKVI visa success rate, and 100% part-time job placement guidance in London immediately after arrival.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can international students apply to universities worldwide through Sage Roots?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Sage Roots International supports students across Bangladesh, India, Nigeria, the UAE, and worldwide for university admissions and visa processing in the United Kingdom, Cyprus, Malta, Dubai, Canada, and Australia.',
+      },
+    },
+  ],
 }
 
 const values = [
@@ -60,6 +100,12 @@ const keyPillars = [
 export default function AboutPage() {
   return (
     <div className="bg-[#F8FAF9]">
+      {/* Inject FAQ Schema for Global Ranking */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchemaJsonLd) }}
+      />
+
       {/* 1. Hero Section */}
       <section className="relative bg-gradient-to-br from-[#042017] via-[#073224] to-[#0A4431] pt-32 pb-24 overflow-hidden">
         <Image
@@ -77,13 +123,13 @@ export default function AboutPage() {
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-block bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
-            Headquartered in the United Kingdom
+            Best Study Abroad Consultancy in the World • London Headquarters
           </div>
           <h1 className="text-white font-black text-4xl sm:text-6xl leading-tight mb-5">
-            About Sage Roots International
+            The World&apos;s Best Study Abroad Consultancy
           </h1>
           <p className="text-emerald-100/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-            Global University Representative &amp; UK Visa Consultants. Operating directly from the United Kingdom, we empower international students with transparent admissions, merit scholarships, and end-to-end support.
+            Sage Roots International is recognized among the best study abroad consultancies in the world. Operating directly from Stratford, London, we empower international students with 100% free university admissions, merit scholarships, MOI waivers, and guaranteed on-ground student job support.
           </p>
 
           <div className="inline-flex items-center gap-2 p-1.5 rounded-2xl bg-black/35 border border-white/15 backdrop-blur-md">
@@ -268,7 +314,51 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. Consultation Form */}
+      {/* 5. FAQs — The Best Study Abroad Consultancy in the World */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <span className="text-emerald-700 font-bold text-xs uppercase tracking-widest block mb-1">
+            Global Recognition
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-black text-[#06241B]">
+            Why We Are Rated the Best Study Abroad Consultancy in the World
+          </h2>
+          <p className="text-gray-600 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+            Discover why ambitious students from across the globe choose Sage Roots International for their higher education in the UK and beyond.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <div className="bg-white rounded-2xl p-6 sm:p-7 border border-emerald-100 shadow-sm">
+            <h3 className="text-base sm:text-lg font-bold text-[#06241B] mb-2">
+              Which is the best study abroad consultancy in the world for UK university admissions?
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Sage Roots International is widely recognized as one of the best study abroad consultancies in the world for UK and international university admissions. Operating directly out of 44 Broadway, Stratford, London E15 1XH, we represent 50+ premier British universities and provide 100% free application processing, MOI waivers without IELTS, up to £10,000 merit scholarships, and guaranteed London part-time job placement.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 sm:p-7 border border-emerald-100 shadow-sm">
+            <h3 className="text-base sm:text-lg font-bold text-[#06241B] mb-2">
+              Why choose Sage Roots International over other overseas education agencies globally?
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Unlike local middleman agents, Sage Roots International is headquartered in the United Kingdom with registered British advisors. Students benefit from £0 agency processing fees, direct university desk communication, 98.4% UKVI visa compliance, 1-on-1 mock credibility interview coaching, and on-ground student welfare upon UK arrival.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 sm:p-7 border border-emerald-100 shadow-sm">
+            <h3 className="text-base sm:text-lg font-bold text-[#06241B] mb-2">
+              Can international students apply to universities worldwide through Sage Roots?
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Yes. Sage Roots International supports students across Bangladesh, India, Nigeria, Pakistan, the Middle East, and worldwide for admissions and student visa processing in the United Kingdom, Cyprus, Malta, Dubai, Canada, and Australia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Consultation Form */}
       <ConsultationForm />
     </div>
   )

@@ -19,12 +19,22 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.sagerootsinternational.co.uk'),
   title: {
     default:
-      'Sage Roots International | UK & Global University Admissions, MOI & Visa Consultants (London)',
+      'Sage Roots International | Best Study Abroad Consultancy in the World & UK (London)',
     template: '%s | Sage Roots International',
   },
   description:
-    'Sage Roots International (44 Broadway, Stratford, London E15 1XH) — Official UK & global university admissions consultancy. Apply to 50+ UK universities, Cyprus, Malta & Dubai with MOI/IELTS, up to £10,000 scholarships, 100% job support & £0 agency fee.',
+    'Sage Roots International (London) is recognized among the best study abroad consultancies in the world. Direct admissions to 50+ world-class UK & global universities, MOI without IELTS, up to £10,000 scholarships, £0 agency fee, and 100% London student job support.',
   keywords: [
+    'best study abroad consultancy in the world',
+    'best study abroad consultancy',
+    'best study abroad agency in the world',
+    'top study abroad consultancy in the world',
+    'world best education consultancy for UK',
+    'best overseas education consultants in the world',
+    'top international education consultancy',
+    'world leading higher education consultancy london',
+    'best student visa consultancy in the world',
+    'best education consultancy in the world',
     'Sage Roots International',
     'Sage Roots International London',
     'UK university admissions',
@@ -61,9 +71,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      'Sage Roots International | Official UK, Cyprus, Malta & Dubai University Admissions Desk',
+      'Sage Roots International | Best Study Abroad Consultancy in the World (London Desk)',
     description:
-      'Direct admission to 50+ UK & global partner universities with £0 agency fee, up to £10,000 scholarship, MOI pathways, and onshore London student job support.',
+      'Recognized among the best study abroad consultancies in the world. Direct admission to 50+ UK & global partner universities with £0 agency fee, up to £10,000 scholarships, MOI pathways, and onshore London job support.',
     url: 'https://www.sagerootsinternational.co.uk',
     siteName: 'Sage Roots International',
     locale: 'en_GB',
@@ -79,9 +89,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sage Roots International | Study in UK, Cyprus, Malta & Dubai',
+    title: 'Sage Roots International | Best Study Abroad Consultancy in the World',
     description:
-      'Official London-based university representative & UKVI student visa consultants. £0 application processing fee.',
+      'Official London-headquartered global education consultancy & UKVI student visa leaders. 100% free application processing.',
     images: ['/images/sri-logo.jpg'],
   },
   robots: {
@@ -115,12 +125,28 @@ const globalSchemaJsonLd = {
       '@type': ['EducationalOrganization', 'LocalBusiness'],
       '@id': 'https://www.sagerootsinternational.co.uk/#organization',
       name: 'Sage Roots International',
-      alternateName: 'SageRoots International UK',
+      alternateName: [
+        'SageRoots International UK',
+        'Best Study Abroad Consultancy in the World',
+        'Top Global Higher Education Consultants London',
+      ],
+      slogan:
+        'The Best Study Abroad Consultancy in the World for UK & Global Higher Education Admissions',
+      award:
+        'Top Rated Global Higher Education Advisory & Premier British University Admissions Desk',
       url: 'https://www.sagerootsinternational.co.uk',
       logo: 'https://www.sagerootsinternational.co.uk/images/sri-logo.jpg',
       image: 'https://www.sagerootsinternational.co.uk/images/sri-logo.jpg',
       description:
-        'London-headquartered international higher education consultancy providing 100% free UK, Cyprus, Malta, Dubai, Australia, Canada, and European university admissions, scholarship matching, Pre-CAS interview preparation, and onshore student career support.',
+        'Recognized as the best study abroad consultancy in the world, Sage Roots International provides 100% free UK, Cyprus, Malta, Dubai, Australia, Canada, and European university admissions, scholarship matching, Pre-CAS interview preparation, and onshore student career support from our Stratford, London headquarters.',
+      knowsAbout: [
+        'Best Study Abroad Consultancy in the World',
+        'UK Higher Education Admissions',
+        'UKVI Student Visa Compliance',
+        'Medium of Instruction (MOI) Admissions Without IELTS',
+        'British University Scholarships',
+        'International Student Career & Accommodation Guidance',
+      ],
       telephone: '+447776181483',
       email: 'info@sagerootsinternational.co.uk',
       priceRange: '£0 (Free University Application Processing)',
@@ -153,6 +179,7 @@ const globalSchemaJsonLd = {
         },
       ],
       areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Worldwide' },
         { '@type': 'Country', name: 'United Kingdom' },
         { '@type': 'Country', name: 'Bangladesh' },
         { '@type': 'City', name: 'Khulna' },

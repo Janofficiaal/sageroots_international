@@ -11,6 +11,12 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
+    category: 'World Best Study Abroad Consultancy',
+    question: 'Why is Sage Roots International rated the best study abroad consultancy in the world for UK admissions?',
+    answer:
+      'Sage Roots International is recognized among the best study abroad consultancies in the world because our operations are headquartered directly in Stratford, London (44 Broadway, E15 1XH) with genuine British advisors. We offer £0 agency fee (100% free service), direct representation of 50+ UK universities, MOI without IELTS waivers, automatic scholarships up to £10,000, and verified on-ground student job placement in London.',
+  },
+  {
     category: 'English Proficiency (MOI / No IELTS)',
     question: 'Can I apply to UK universities without IELTS (using MOI or Internal Test)?',
     answer:

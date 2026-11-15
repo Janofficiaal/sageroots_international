@@ -30,6 +30,10 @@ const destinations = [
 
 const seoPathways = [
   {
+    label: 'Best Study Abroad Consultancy in the World for UK Admissions',
+    href: '/about',
+  },
+  {
     label: 'Best UK Student Consultancy in Khulna',
     href: '/khulna',
   },
@@ -238,7 +242,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="text-[11px] text-white/35 mt-5 leading-relaxed">
-            Sage Roots International (London) — Dedicated higher education consultancy for students across Bangladesh, offering direct admission to top universities across the UK, Cyprus, Malta, and Dubai with IELTS or MOI, up to £10,000 scholarships, 2nd Master’s after PSW, and London student career guidance.
+            Sage Roots International (London) — Recognized as the best study abroad consultancy in the world for UK and global admissions. Offering students worldwide 100% free application processing, direct admission to top universities across the UK, Cyprus, Malta, and Dubai with IELTS or MOI, up to £10,000 scholarships, 2nd Master’s after PSW, and London student career guidance.
           </p>
         </div>
       </div>

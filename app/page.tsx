@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import HeroSlider from '@/components/home/HeroSlider'
 import RequirementsPushSlider from '@/components/home/RequirementsPushSlider'
 import UniversityMarquee from '@/components/home/UniversityMarquee'
@@ -16,6 +17,49 @@ import BankCalculator from '@/components/home/BankCalculator'
 import LatestFacebookPosts from '@/components/home/LatestFacebookPosts'
 import FAQSection from '@/components/home/FAQSection'
 import ConsultationForm from '@/components/home/ConsultationForm'
+
+export const metadata: Metadata = {
+  title: 'Sage Roots International | Best Study Abroad Consultancy in the World (sageroots)',
+  description:
+    'Sage Roots International (sageroots international) is the premier global study abroad consultancy for UK, Cyprus, Malta, Dubai, and Canada. 100% free application processing, MOI admissions without IELTS, scholarships up to £10,000, and London student job support.',
+  keywords: [
+    'sageroots',
+    'sageroots international',
+    'sagerootsinternational',
+    'sage roots',
+    'sage roots international',
+    'study abroad',
+    'study abroad consultancy',
+    'study abroad agency',
+    'study abroad in uk',
+    'study abroad bangladesh',
+    'best study abroad consultancy in the world',
+    'best study abroad consultancy',
+    'best study abroad agency in the world',
+    'top study abroad consultancy',
+    'overseas education consultants',
+    'study in uk without ielts',
+    'sage roots international london',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Sage Roots International | Best Study Abroad Consultancy in the World (sageroots)',
+    description:
+      'Official London-headquartered study abroad consultancy (sageroots international). 100% free university applications, up to £10,000 scholarships, MOI without IELTS, and London job placement.',
+    url: 'https://www.sagerootsinternational.co.uk',
+    siteName: 'Sage Roots International',
+    images: [
+      {
+        url: '/images/sri-logo.jpg',
+        width: 800,
+        height: 800,
+        alt: 'Sage Roots International - sageroots international study abroad',
+      },
+    ],
+  },
+}
 
 export default function HomePage() {
   return (

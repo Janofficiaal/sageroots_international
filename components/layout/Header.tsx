@@ -13,6 +13,7 @@ import {
 
 const navItems = [
   { label: 'Home', href: '/' },
+  { label: 'Study Abroad', href: '/study-abroad' },
   {
     label: 'Destinations',
     href: '/destinations',
@@ -37,9 +38,12 @@ const navItems = [
     href: '/eligibility-checker',
     children: [
       { label: 'MOI & Eligibility Checker', href: '/eligibility-checker' },
-      { label: 'UKVI 28-Day Bank Calculator', href: '/#bank-calculator' },
-      { label: 'Pre-CAS & Interview Guide', href: '/#uk-admission-guide' },
-      { label: 'UK Intake Calendar 2027', href: '/#uk-intake-calendar' },
+      { label: 'Study in UK Without IELTS (MOI)', href: '/study-in-uk-without-ielts-moi-accepted-universities' },
+      { label: 'UKVI 28-Day Bank Statement Guide', href: '/uk-student-visa-bank-statement-guide-28-day-rule' },
+      { label: 'Dhaka Student Desk', href: '/dhaka' },
+      { label: 'Sylhet Student Desk', href: '/sylhet' },
+      { label: 'Chittagong Student Desk', href: '/chittagong' },
+      { label: 'Rajshahi Student Desk', href: '/rajshahi' },
       { label: 'Khulna Regional Desk', href: '/khulna' },
     ],
   },
@@ -134,12 +138,12 @@ export default function Header() {
             {/* Mobile Official SRI Logo */}
             <Link
               href="/"
-              aria-label="Sage Roots International Home"
+              aria-label="Sage Roots International (sageroots) Home"
               className="relative w-9 h-9 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-amber-400/60 shadow-md"
             >
               <Image
                 src="/images/sri-logo.jpg"
-                alt="Sage Roots International Logo"
+                alt="Sage Roots International — sageroots international study abroad consultancy"
                 fill
                 className="object-cover scale-[1.04]"
                 sizes="36px"
@@ -189,12 +193,12 @@ export default function Header() {
             {/* Official SRI Logo Emblem */}
             <Link
               href="/"
-              aria-label="Sage Roots International Home"
+              aria-label="Sage Roots International (sageroots) Home"
               className="relative w-11 h-11 rounded-full overflow-hidden flex-shrink-0 mr-1 ring-2 ring-amber-400/70 shadow-lg hover:scale-105 transition-transform"
             >
               <Image
                 src="/images/sri-logo.jpg"
-                alt="Sage Roots International Logo"
+                alt="Sage Roots International — sageroots international best study abroad consultancy"
                 fill
                 className="object-cover scale-[1.04]"
                 sizes="44px"

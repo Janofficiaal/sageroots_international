@@ -4,14 +4,15 @@ import { Facebook, Instagram } from 'lucide-react'
 
 const quickLinks = [
   { label: 'About Us', href: '/about' },
-  { label: 'UK Universities (50+)', href: '/universities' },
+  { label: 'UK Universities (139+)', href: '/universities' },
+  { label: 'Instant Eligibility Checker', href: '/eligibility-checker' },
   { label: 'Study Destinations (10)', href: '/destinations' },
-  { label: 'Daily Facebook Posts', href: '/posts' },
+  { label: 'Dhaka Student Desk', href: '/dhaka' },
+  { label: 'Sylhet Student Desk', href: '/sylhet' },
+  { label: 'Chittagong Student Desk', href: '/chittagong' },
   { label: 'Khulna Regional Desk', href: '/khulna' },
-  { label: 'Our Services', href: '/services' },
-  { label: 'Foundation Courses', href: '/foundation' },
+  { label: 'Daily Facebook Posts', href: '/posts' },
   { label: 'Scholarships (£ GBP)', href: '/scholarships' },
-  { label: 'Success Stories', href: '/success-stories' },
   { label: 'Contact London Office', href: '/contact' },
 ]
 
@@ -34,6 +35,30 @@ const seoPathways = [
     href: '/best-study-abroad-consultancy-in-the-world',
   },
   {
+    label: 'Study in UK Without IELTS (MOI Accepted Universities Guide)',
+    href: '/study-in-uk-without-ielts-moi-accepted-universities',
+  },
+  {
+    label: 'UK Student Visa Bank Statement Guide & 28-Day Rule',
+    href: '/uk-student-visa-bank-statement-guide-28-day-rule',
+  },
+  {
+    label: 'Best UK Student Visa Consultancy in Dhaka (DU, NSU, BRAC)',
+    href: '/dhaka',
+  },
+  {
+    label: 'Best UK Student Visa Consultancy in Sylhet (SUST, Leading)',
+    href: '/sylhet',
+  },
+  {
+    label: 'Best UK Student Visa Consultancy in Chittagong (CU, CUET)',
+    href: '/chittagong',
+  },
+  {
+    label: 'Best UK Student Visa Consultancy in Rajshahi (RU, RUET)',
+    href: '/rajshahi',
+  },
+  {
     label: 'Best UK Student Consultancy in Khulna',
     href: '/khulna',
   },
@@ -46,28 +71,12 @@ const seoPathways = [
     href: '/posts/study-in-ulster-university-january-2027-intake-tuition-10625',
   },
   {
-    label: 'Study in UK with IELTS 5.5 Overall (Business & Law)',
-    href: '/posts/study-in-the-uk-january-2027-intake-ielts-5-5-business-management-law',
-  },
-  {
-    label: 'UK Master’s Entry Requirements (IELTS 6.0/6.5 or MOI)',
-    href: '/posts/entry-requirements-for-masters-in-the-uk-ielts-or-moi',
-  },
-  {
     label: '100% Part-Time Job Support in Stratford, London',
     href: '/posts/uk-student-part-time-job-support-stratford-london-office',
   },
   {
-    label: 'UK Care & Support Work Free Training in London',
-    href: '/posts/build-your-career-in-the-uk-care-and-support-work-opportunities',
-  },
-  {
-    label: 'UK Tuition From £11,200 & CAS Deposit From £5,900',
-    href: '/posts/study-in-the-uk-cas-deposit-from-5900-tuition-from-11200-ielts-waiver',
-  },
-  {
-    label: 'UKVI 28-Day Bank Statement Calculator (£ GBP)',
-    href: '/#bank-calculator',
+    label: 'Instant University & MOI Eligibility Checker',
+    href: '/eligibility-checker',
   },
 ]
 
@@ -109,7 +118,7 @@ export default function Footer() {
               <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-amber-400/70 shadow-md">
                 <Image
                   src="/images/sri-logo.jpg"
-                  alt="Sage Roots International Official Logo"
+                  alt="Sage Roots International (sageroots international) — Best Study Abroad Consultancy in the World"
                   fill
                   className="object-cover scale-[1.04]"
                   sizes="48px"
@@ -123,7 +132,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/55 text-sm leading-relaxed mb-6">
-              Official UK &amp; Global University Representative and Student Visa Consultants. Headquartered at 44 Broadway, Stratford, London E15 1XH.
+              Sage Roots International (sageroots international) is recognized among the best study abroad consultancies in the world for UK &amp; global admissions. Headquartered at 44 Broadway, Stratford, London E15 1XH.
             </p>
 
             {/* Social */}

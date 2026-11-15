@@ -31,14 +31,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `Study in ${dest.name} from Bangladesh`,
       `${dest.name} scholarship for international students`,
       `Sage Roots International ${dest.name}`,
+      `best study abroad consultancy in the world`,
+      `study in ${dest.name} without IELTS`,
     ],
     alternates: {
-      canonical: `/destinations/${dest.slug}`,
+      canonical: `https://www.sagerootsinternational.co.uk/destinations/${dest.slug}`,
     },
     openGraph: {
       title,
       description,
       url: `https://www.sagerootsinternational.co.uk/destinations/${dest.slug}`,
+      siteName: 'Sage Roots International',
+      locale: 'en_GB',
       type: 'website',
       images: [
         {
@@ -48,6 +52,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           alt: `Study in ${dest.name} — Tuition Fees, Visa & Universities`,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [dest.image],
     },
   }
 }
@@ -94,6 +104,35 @@ export default function DestinationDetailPage({ params }: Props) {
             position: 3,
             name: `Study in ${dest.name}`,
             item: `https://www.sagerootsinternational.co.uk/destinations/${dest.slug}`,
+          },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: `What are the typical tuition fees and living costs for studying in ${dest.name}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `Tuition fees in ${dest.name} typically range between ${dest.tuitionRange}, with living costs estimated at around ${dest.livingCost}. Sage Roots International provides free financial planning and scholarship assessment.`,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `What post-study work visa rights are available in ${dest.name}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `International students studying in ${dest.name} can benefit from post-study work opportunities: ${dest.postStudyWork}.`,
+            },
+          },
+          {
+            '@type': 'Question',
+            name: `How can I apply to study in ${dest.name} through Sage Roots International?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `You can apply with 100% free guidance (£0 agency fee) through Sage Roots International. We assist with course selection, university application submission, scholarship matching, and visa filing.`,
+            },
           },
         ],
       },

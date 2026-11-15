@@ -83,6 +83,25 @@ export default function UniversityDetailPage({ params }: Props) {
     `Hello Sage Roots International! I want to check my eligibility and scholarship options for ${university.name} (${university.city}).`
   )}`
 
+  const universityFaqs = [
+    {
+      q: `What are the international tuition fees at ${university.name}?`,
+      a: `Tuition fees at ${university.name} typically average around ${university.tuitionFeeNote}. Tuition varies by course level (Undergraduate vs Postgraduate) and subject area. Sage Roots International provides free fee assessment and scholarship matching.`,
+    },
+    {
+      q: `Does ${university.name} accept Medium of Instruction (MOI) without IELTS?`,
+      a: `Yes, many academic programs at ${university.name} accept an official English Medium of Instruction (MOI) certificate from recognized institutions for Bangladeshi and international graduates, alongside standard IELTS/PTE tests.`,
+    },
+    {
+      q: `What scholarships are available for international students at ${university.name}?`,
+      a: `International applicants can qualify for merit scholarships and bursaries: ${university.scholarshipNote}. Sage Roots International assists students with automatic scholarship assessment upon submission of academic transcripts.`,
+    },
+    {
+      q: `How can I apply to ${university.name} through Sage Roots International?`,
+      a: `You can apply with 100% free service (£0 agency fee) through Sage Roots International's London office. We guide you through course selection, Statement of Purpose (SOP) review, university offer letter issuance, Pre-CAS mock interviews, and UKVI student visa processing.`,
+    },
+  ]
+
   const universityJsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -97,6 +116,17 @@ export default function UniversityDetailPage({ params }: Props) {
           addressLocality: university.city,
           addressCountry: university.countryCode || 'GB',
         },
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: universityFaqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.a,
+          },
+        })),
       },
       {
         '@type': 'BreadcrumbList',
@@ -276,6 +306,44 @@ export default function UniversityDetailPage({ params }: Props) {
                   <span className="font-medium">{doc}</span>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* University Specific FAQs for Rich Search Snippets */}
+          <div className="bg-white border border-emerald-100 rounded-2xl shadow-sm p-6 sm:p-8">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-emerald-700 font-bold text-xs uppercase tracking-widest">
+                Admissions FAQ
+              </span>
+            </div>
+            <h3 className="text-[#06241B] font-black text-xl mb-6">
+              Frequently Asked Questions About {university.name}
+            </h3>
+            <div className="space-y-4">
+              {universityFaqs.map((faq, i) => (
+                <div key={i} className="border-b border-gray-100 pb-4 last:border-b-0 last:pb-0">
+                  <h4 className="text-sm font-bold text-[#06241B] mb-1.5 flex items-start gap-2">
+                    <span className="text-emerald-600 font-black">Q:</span>
+                    <span>{faq.q}</span>
+                  </h4>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed pl-5">
+                    {faq.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Internal link to tool */}
+            <div className="mt-6 pt-5 border-t border-emerald-50 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <p className="text-xs text-gray-500 font-medium">
+                Want to check your exact admission eligibility and scholarship discount?
+              </p>
+              <Link
+                href="/eligibility-checker"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#073224] hover:text-emerald-700 underline underline-offset-4 whitespace-nowrap"
+              >
+                Instant Eligibility Checker →
+              </Link>
             </div>
           </div>
 

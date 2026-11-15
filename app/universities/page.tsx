@@ -73,6 +73,27 @@ export default function UniversitiesPage() {
           <p className="text-emerald-100/80 text-base max-w-xl mx-auto leading-relaxed">
             Browse all UK partner universities in A to Z alphabetical order, filter by starting letter or degree level, and compare up to 3 universities side-by-side.
           </p>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5">
+            <Link
+              href="/scholarships"
+              className="bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md transition"
+            >
+              📊 Tuition &amp; Scholarship Matrix 2027 →
+            </Link>
+            <Link
+              href="/uk-universities-with-low-cas-deposit-tuition-fees"
+              className="bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md transition"
+            >
+              💰 Low CAS Deposit Universities (£3,000) →
+            </Link>
+            <Link
+              href="/study-in-uk-without-ielts-moi-accepted-universities"
+              className="bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 text-xs font-bold px-4 py-2 rounded-xl backdrop-blur-md transition"
+            >
+              🎓 Study Without IELTS (MOI Accepted) →
+            </Link>
+          </div>
         </div>
       </section>
 

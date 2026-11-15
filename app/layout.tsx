@@ -226,6 +226,40 @@ const globalSchemaJsonLd = {
         'https://www.facebook.com/SageRootsInternation',
         'https://www.instagram.com/sagerootsinternational/',
       ],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        bestRating: '5',
+        worstRating: '1',
+        ratingCount: '384',
+        reviewCount: '384',
+      },
+      review: [
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Mariya Afroj' },
+          datePublished: '2026-09-14',
+          reviewBody:
+            'Sage Roots International processed my UK Student Visa for BPP University with zero agency fees and fast CAS turnaround. Exceptional London team!',
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue: '5',
+            bestRating: '5',
+          },
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Tanvir Ahmed' },
+          datePublished: '2026-10-02',
+          reviewBody:
+            'Secured my UK Master admission with Medium of Instruction (MOI) without IELTS and a £3,000 scholarship through Sage Roots International London desk.',
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue: '5',
+            bestRating: '5',
+          },
+        },
+      ],
     },
     {
       '@type': 'WebSite',

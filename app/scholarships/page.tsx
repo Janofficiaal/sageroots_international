@@ -170,6 +170,222 @@ export default function ScholarshipsPage() {
       <EligibilityChecker />
       <BankCalculator />
 
+      {/* Featured Snippet Position 0 Comparison Table */}
+      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white border border-emerald-100 rounded-3xl p-6 sm:p-10 shadow-lg">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+            <div>
+              <span className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full border border-emerald-200 uppercase tracking-wider mb-2">
+                Official 2027 Admissions Matrix
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-black text-[#042017]">
+                UK University Tuition, Scholarships &amp; CAS Deposit Comparison 2027
+              </h2>
+              <p className="text-gray-600 text-sm mt-1 max-w-2xl">
+                Quick comparison table of top UK institutions popular with international students for <strong>January 2027</strong>, <strong>April/May 2027</strong>, and <strong>September 2027</strong> intakes. Evaluated and processed with <strong>£0 agency fee</strong> by Sage Roots International London team.
+              </p>
+            </div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-brand-magenta hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-xl transition shadow-md whitespace-nowrap self-start md:self-auto"
+            >
+              Check My Scholarship Eligibility <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="overflow-x-auto rounded-2xl border border-gray-200">
+            <table className="w-full text-left text-xs sm:text-sm border-collapse">
+              <caption className="sr-only">
+                UK University Tuition Fee, Maximum Scholarship and Minimum CAS Deposit Comparison for 2027 Intakes
+              </caption>
+              <thead>
+                <tr className="bg-[#042017] text-white">
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">University &amp; Campuses</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">Location</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">Annual Tuition (£ GBP)</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">Max Scholarship (£)</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">Min CAS Deposit</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">MOI Accepted?</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold">Active 2027 Intakes</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200 bg-white">
+                {[
+                  {
+                    name: 'Ulster University',
+                    slug: 'ulster-university',
+                    location: 'London, Birmingham & Belfast',
+                    tuition: '£10,625 – £16,000',
+                    scholarship: 'Up to £2,000',
+                    deposit: '£3,000 – £5,000',
+                    moi: 'Yes (Up to 5-yr Gap)',
+                    intakes: 'Jan, May, Sep 2027',
+                    highlight: true,
+                  },
+                  {
+                    name: 'BPP University',
+                    slug: 'bpp-university',
+                    location: 'London, Manchester & Birmingham',
+                    tuition: '£12,500 – £14,500',
+                    scholarship: 'Up to £3,000',
+                    deposit: '£3,000 (Very Low)',
+                    moi: 'Yes (2nd Master’s Allowed)',
+                    intakes: 'Jan, May, Sep 2027',
+                    highlight: true,
+                  },
+                  {
+                    name: 'University of Greenwich',
+                    slug: 'university-of-greenwich',
+                    location: 'London & Medway',
+                    tuition: '£15,100 – £17,500',
+                    scholarship: 'Up to £3,000',
+                    deposit: '£3,000 – £4,000',
+                    moi: 'Yes (Specific Universities)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of Hertfordshire',
+                    slug: 'university-of-hertfordshire',
+                    location: 'Hatfield (Greater London)',
+                    tuition: '£14,750 – £16,500',
+                    scholarship: 'Up to £4,000',
+                    deposit: '£5,000',
+                    moi: 'Yes (MOI + Interview)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'Coventry University',
+                    slug: 'coventry-university',
+                    location: 'Coventry & London',
+                    tuition: '£15,300 – £18,600',
+                    scholarship: 'Up to £2,500',
+                    deposit: '£4,000',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, May, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of Roehampton',
+                    slug: 'university-of-roehampton',
+                    location: 'London',
+                    tuition: '£14,500 – £16,500',
+                    scholarship: 'Up to £4,000',
+                    deposit: '£3,000 – £5,000',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, Apr, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of Bedfordshire',
+                    slug: 'university-of-bedfordshire',
+                    location: 'Luton & London',
+                    tuition: '£13,500 – £15,500',
+                    scholarship: 'Up to £2,000',
+                    deposit: '£3,000 – £4,000',
+                    moi: 'Yes (Wide Acceptance)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of Portsmouth',
+                    slug: 'university-of-portsmouth',
+                    location: 'Portsmouth (South Coast)',
+                    tuition: '£16,200 – £19,200',
+                    scholarship: 'Up to £3,000',
+                    deposit: '£3,500 – £5,000',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of Chester',
+                    slug: 'university-of-chester',
+                    location: 'Chester (North West)',
+                    tuition: '£13,950 – £15,500',
+                    scholarship: 'Up to £3,000',
+                    deposit: '£3,000 – £5,000',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of Sunderland',
+                    slug: 'university-of-sunderland',
+                    location: 'Sunderland & Canary Wharf London',
+                    tuition: '£13,500 – £16,000',
+                    scholarship: 'Up to £2,000',
+                    deposit: '£3,500',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, Apr, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'University of West London',
+                    slug: 'university-of-west-london',
+                    location: 'Ealing & Brentford, London',
+                    tuition: '£14,250 – £16,000',
+                    scholarship: 'Up to £2,000',
+                    deposit: '£4,000',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                  {
+                    name: 'Leeds Beckett University',
+                    slug: 'leeds-beckett-university',
+                    location: 'Leeds (Yorkshire)',
+                    tuition: '£14,000 – £16,000',
+                    scholarship: 'Up to £3,000',
+                    deposit: '£4,000 – £5,000',
+                    moi: 'Yes (MOI Accepted)',
+                    intakes: 'Jan, Sep 2027',
+                    highlight: false,
+                  },
+                ].map((row) => (
+                  <tr
+                    key={row.slug}
+                    className={`hover:bg-emerald-50/50 transition-colors ${
+                      row.highlight ? 'bg-emerald-50/30 font-medium' : ''
+                    }`}
+                  >
+                    <th scope="row" className="p-3.5 sm:p-4 text-emerald-950">
+                      <Link
+                        href={`/universities/${row.slug}`}
+                        className="text-emerald-700 hover:text-emerald-900 font-bold hover:underline"
+                      >
+                        {row.name}
+                      </Link>
+                    </th>
+                    <td className="p-3.5 sm:p-4 text-gray-600">{row.location}</td>
+                    <td className="p-3.5 sm:p-4 font-semibold text-gray-900">{row.tuition}</td>
+                    <td className="p-3.5 sm:p-4 font-bold text-emerald-700">{row.scholarship}</td>
+                    <td className="p-3.5 sm:p-4 font-medium text-amber-700">{row.deposit}</td>
+                    <td className="p-3.5 sm:p-4 text-gray-700">
+                      <span className="inline-flex items-center gap-1 text-emerald-700 font-semibold text-xs">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+                        {row.moi}
+                      </span>
+                    </td>
+                    <td className="p-3.5 sm:p-4 text-xs font-semibold text-gray-800">{row.intakes}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-4 flex flex-wrap items-center justify-between text-xs text-gray-500 gap-2">
+            <span>* Fees and scholarship awards are subject to university terms and applicant GPA/grades.</span>
+            <Link
+              href="/universities"
+              className="text-emerald-700 font-bold hover:underline inline-flex items-center gap-1"
+            >
+              Browse all 139+ UK Partner Universities <ArrowRight className="w-3 h-3" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Scholarship Opportunities Information */}
       <section className="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Disclaimer */}

@@ -91,6 +91,22 @@ const seoPathways = [
     href: '/uk-january-2027-intake-universities-deadlines',
   },
   {
+    label: 'MSc Data Science & AI in UK (2027 Intakes)',
+    href: '/courses/data-science-ai-uk',
+  },
+  {
+    label: 'MBA in UK Without Work Experience & MOI',
+    href: '/courses/mba-business-uk',
+  },
+  {
+    label: 'MSc Cyber Security in UK with Placement',
+    href: '/courses/cyber-security-uk',
+  },
+  {
+    label: 'MSc Nursing & Healthcare Leadership in UK',
+    href: '/courses/healthcare-nursing-uk',
+  },
+  {
     label: 'Instant University & MOI Eligibility Checker',
     href: '/eligibility-checker',
   },

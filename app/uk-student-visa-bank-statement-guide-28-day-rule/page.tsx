@@ -20,6 +20,7 @@ import {
   Calendar,
 } from 'lucide-react'
 import ConsultationForm from '@/components/home/ConsultationForm'
+import InteractiveVisaChecklist from '@/components/home/InteractiveVisaChecklist'
 
 export const metadata: Metadata = {
   title: 'UK Student Visa Bank Statement Guide: 28-Day Rule & Maintenance Funds | Sage Roots International',
@@ -275,6 +276,9 @@ export default function BankStatementGuidePage() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Visa & Bank Statement Checklist Tool */}
+      <InteractiveVisaChecklist />
 
       {/* Acceptable Banks in Bangladesh */}
       <section className="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
